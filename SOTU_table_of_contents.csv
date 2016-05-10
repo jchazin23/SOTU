@@ -1,0 +1,225 @@
+President,SOTU,Month_Day,Year,Speech_Start_Line,Speech_End_Line
+George Washington, State of the Union Address, January 8, 1790,231,362
+George Washington, State of the Union Address, December 8, 1790,362,514
+George Washington, State of the Union Address, October 25, 1791,514,775
+George Washington, State of the Union Address, November 6, 1792,775,1010
+George Washington, State of the Union Address, December 3, 1793,1010,1217
+George Washington, State of the Union Address, November 19, 1794,1217,1518
+George Washington, State of the Union Address, December 8, 1795,1518,1734
+George Washington, State of the Union Address, December 7, 1796,1734,2038
+John Adams, State of the Union Address, November 22, 1797,2038,2254
+John Adams, State of the Union Address, December 8, 1798,2254,2490
+John Adams, State of the Union Address, December 3, 1799,2490,2649
+John Adams, State of the Union Address, November 11, 1800,2649,2803
+Thomas Jefferson, State of the Union Address, December 8, 1801,2803,3130
+Thomas Jefferson, State of the Union Address, December 15, 1802,3130,3347
+Thomas Jefferson, State of the Union Address, October 17, 1803,3347,3582
+Thomas Jefferson, State of the Union Address, November 8, 1804,3582,3796
+Thomas Jefferson, State of the Union Address, December 3, 1805,3796,4085
+Thomas Jefferson, State of the Union Address, December 2, 1806,4085,4374
+Thomas Jefferson, State of the Union Address, October 27, 1807,4374,4618
+Thomas Jefferson, State of the Union Address, November 8, 1808,4618,4884
+James Madison, State of the Union Address, November 29, 1809,4884,5072
+James Madison, State of the Union Address, December 5, 1810,5072,5330
+James Madison, State of the Union Address, November 5, 1811,5330,5574
+James Madison, State of the Union Address, November 4, 1812,5574,5910
+James Madison, State of the Union Address, December 7, 1813,5910,6251
+James Madison, State of the Union Address, September 20, 1814,6251,6469
+James Madison, State of the Union Address, December 5, 1815,6469,6793
+James Madison, State of the Union Address, December 3, 1816,6793,7132
+James Monroe, State of the Union Address, December 12, 1817,7132,7575
+James Monroe, State of the Union Address, November 16, 1818,7575,8023
+James Monroe, State of the Union Address, December 7, 1819,8023,8492
+James Monroe, State of the Union Address, November 14, 1820,8492,8840
+James Monroe, State of the Union Address, December 3, 1821,8840,9411
+James Monroe, State of the Union Address, December 3, 1822,9411,9884
+James Monroe, State of the Union Address, December 2, 1823,9884,10539
+James Monroe, State of the Union Address, December 7, 1824,10539,11373
+John Quincy Adams, State of the Union Address, December 6, 1825,11373,12246
+John Quincy Adams, State of the Union Address, December 5, 1826,12246,12997
+John Quincy Adams, State of the Union Address, December 4, 1827,12997,13689
+John Quincy Adams, State of the Union Address, December 2, 1828,13689,14419
+Andrew Jackson, State of the Union Address, December 8, 1829,14419,15444
+Andrew Jackson, State of the Union Address, December 6, 1830,15444,16928
+Andrew Jackson, State of the Union Address, December 6, 1831,16928,17629
+Andrew Jackson, State of the Union Address, December 4, 1832,17629,18397
+Andrew Jackson, State of the Union Address, December 3, 1833,18397,19168
+Andrew Jackson, State of the Union Address, December 1, 1834,19168,20487
+Andrew Jackson, State of the Union Address, December 7, 1835,20487,21539
+Andrew Jackson, State of the Union Address, December 5, 1836,21539,22743
+Martin van Buren, State of the Union Address, December 5, 1837,22743,23845
+Martin van Buren, State of the Union Address, December 3, 1838,23845,24957
+Martin van Buren, State of the Union Address, December 2, 1839,24957,26224
+Martin van Buren, State of the Union Address, December 5, 1840,26224,27097
+John Tyler, State of the Union Address, December 7, 1841,27097,27857
+John Tyler, State of the Union Address, December 6, 1842,27857,28634
+John Tyler, State of the Union Address, December 6, 1843,28634,29383
+John Tyler, State of the Union Address, December 3, 1844,29383,30252
+James Polk, State of the Union Address, December 2, 1845,30252,31754
+James Polk, State of the Union Address, December 8, 1846,31754,33462
+James Polk, State of the Union Address, December 7, 1847,33462,35041
+James Polk, State of the Union Address, December 5, 1848,35041,37115
+Zachary Taylor, State of the Union Address, December 4, 1849,37115,37873
+Millard Fillmore, State of the Union Address, December 2, 1850,37873,38685
+Millard Fillmore, State of the Union Address, December 2, 1851,38685,40000
+Millard Fillmore, State of the Union Address, December 6, 1852,40000,40963
+Franklin Pierce, State of the Union Address, December 5, 1853,40963,41914
+Franklin Pierce, State of the Union Address, December 4, 1854,41914,42870
+Franklin Pierce, State of the Union Address, December 31, 1855,42870,44029
+Franklin Pierce, State of the Union Address, December 2, 1856,44029,45065
+James Buchanan, State of the Union Address, December 8, 1857,45065,46397
+James Buchanan, State of the Union Address, December 6, 1858,46397,47978
+James Buchanan, State of the Union Address, December 19, 1859,47978,49143
+James Buchanan, State of the Union Address, December 3, 1860,49143,50531
+Abraham Lincoln, State of the Union Address, December 3, 1861,50531,51244
+Abraham Lincoln, State of the Union Address, December 1, 1862,51244,52095
+Abraham Lincoln, State of the Union Address, December 8, 1863,52095,52708
+Abraham Lincoln, State of the Union Address, December 6, 1864,52708,53362
+Andrew Johnson, State of the Union Address, December 4, 1865,53362,54206
+Andrew Johnson, State of the Union Address, December 3, 1866,54206,54906
+Andrew Johnson, State of the Union Address, December 3, 1867,54906,56018
+Andrew Johnson, State of the Union Address, December 9, 1868,56018,57002
+Ulysses S. Grant, State of the Union Address, December 6, 1869,57002,57763
+Ulysses S. Grant, State of the Union Address, December 5, 1870,57763,58607
+Ulysses S. Grant, State of the Union Address, December 4, 1871,58607,59285
+Ulysses S. Grant, State of the Union Address, December 2, 1872,59285,59716
+Ulysses S. Grant, State of the Union Address, December 1, 1873,59716,60744
+Ulysses S. Grant, State of the Union Address, December 7, 1874,60744,61632
+Ulysses S. Grant, State of the Union Address, December 7, 1875,61632,62854
+Ulysses S. Grant, State of the Union Address, December 5, 1876,62854,63555
+Rutherford B. Hayes, State of the Union Address, December 3, 1877,63555,64352
+Rutherford B. Hayes, State of the Union Address, December 2, 1878,64352,65157
+Rutherford B. Hayes, State of the Union Address, December 1, 1879,65157,66351
+Rutherford B. Hayes, State of the Union Address, December 6, 1880,66351,67051
+Chester A. Arthur, State of the Union Address, December 6, 1881,67051,67540
+Chester A. Arthur, State of the Union Address, December 4, 1882,67540,67947
+Chester A. Arthur, State of the Union Address, December 4, 1883,67947,68452
+Chester A. Arthur, State of the Union Address, December 1, 1884,68452,69493
+Grover Cleveland, State of the Union Address, December 8, 1885,69493,71597
+Grover Cleveland, State of the Union Address, December 6, 1886,71597,73241
+Grover Cleveland, State of the Union Address, December 6, 1887,73241,73766
+Grover Cleveland, State of the Union Address, December 3, 1888,73766,74777
+Benjamin Harrison, State of the Union Address, December 3, 1889,74777,76104
+Benjamin Harrison, State of the Union Address, December 1, 1890,76104,77257
+Benjamin Harrison, State of the Union Address, December 9, 1891,77257,78829
+Benjamin Harrison, State of the Union Address, December 6, 1892,78829,80158
+William McKinley, State of the Union Address, December 6, 1897,80158,81345
+William McKinley, State of the Union Address, December 5, 1898,81345,83411
+William McKinley, State of the Union Address, December 5, 1899,83411,84989
+William McKinley, State of the Union Address, December 3, 1900,84989,87035
+Theodore Roosevelt, State of the Union Address, December 3, 1901,87035,88926
+Theodore Roosevelt, State of the Union Address, December 2, 1902,88926,89865
+Theodore Roosevelt, State of the Union Address, December 7, 1903,89865,91286
+Theodore Roosevelt, State of the Union Address, December 6, 1904,91286,92951
+Theodore Roosevelt, State of the Union Address, December 5, 1905,92951,95239
+Theodore Roosevelt, State of the Union Address, December 3, 1906,95239,97380
+Theodore Roosevelt, State of the Union Address, December 3, 1907,97380,99906
+Theodore Roosevelt, State of the Union Address, December 8, 1908,99906,101768
+William H. Taft, State of the Union Address, December 7, 1909,101768,103196
+William H. Taft, State of the Union Address, December 6, 1910,103196,103970
+William H. Taft, State of the Union Address, December 5, 1911,103970,106474
+William H. Taft, State of the Union Address, December 3, 1912,106474,109016
+Woodrow Wilson, State of the Union Address, December 2, 1913,109016,109348
+Woodrow Wilson, State of the Union Address, December 8, 1914,109348,109762
+Woodrow Wilson, State of the Union Address, December 7, 1915,109762,110467
+Woodrow Wilson, State of the Union Address, December 5, 1916,110467,110704
+Woodrow Wilson, State of the Union Address, December 4, 1917,110704,111082
+Woodrow Wilson, State of the Union Address, December 2, 1918,111082,111579
+Woodrow Wilson, State of the Union Address, December 2, 1919,111579,112037
+Woodrow Wilson, State of the Union Address, December 7, 1920,112037,112302
+Warren Harding, State of the Union Address, December 6, 1921,112302,112884
+Warren Harding, State of the Union Address, December 8, 1922,112884,113501
+Calvin Coolidge, State of the Union Address, December 6, 1923,113501,114257
+Calvin Coolidge, State of the Union Address, December 3, 1924,114257,114996
+Calvin Coolidge, State of the Union Address, December 8, 1925,114996,116137
+Calvin Coolidge, State of the Union Address, December 7, 1926,116137,117198
+Calvin Coolidge, State of the Union Address, December 6, 1927,117198,118136
+Calvin Coolidge, State of the Union Address, December 4, 1928,118136,119045
+Herbert Hoover, State of the Union Address, December 3, 1929,119045,120277
+Herbert Hoover, State of the Union Address, December 2, 1930,120277,120822
+Herbert Hoover, State of the Union Address, December 8, 1931,120822,121502
+Herbert Hoover, State of the Union Address, December 6, 1932,121502,121644
+Franklin D. Roosevelt, State of the Union Address, January 3, 1934,121644,121893
+Franklin D. Roosevelt, State of the Union Address, January 4, 1935,121893,122276
+Franklin D. Roosevelt, State of the Union Address, January 3, 1936,122276,122680
+Franklin D. Roosevelt, State of the Union Address, January 6, 1937,122680,122987
+Franklin D. Roosevelt, State of the Union Address, January 3, 1938,122987,123505
+Franklin D. Roosevelt, State of the Union Address, January 4, 1939,123505,123965
+Franklin D. Roosevelt, State of the Union Address, January 3, 1940,123965,124335
+Franklin D. Roosevelt, State of the Union Address, January 6, 1941,124335,124744
+Franklin D. Roosevelt, State of the Union Address, January 6, 1942,124744,125135
+Franklin D. Roosevelt, State of the Union Address, January 7, 1943,125135,125654
+Franklin D. Roosevelt, State of the Union Address, January 11, 1944,125654,126095
+Franklin D. Roosevelt, State of the Union Address, January 6, 1945,126095,127058
+Harry S. Truman, State of the Union Address, January 21, 1946,127058,130349
+Harry S. Truman, State of the Union Address, January 6, 1947,130349,131088
+Harry S. Truman, State of the Union Address, January 7, 1948,131088,131723
+Harry S. Truman, State of the Union Address, January 5, 1949,131723,132152
+Harry S. Truman, State of the Union Address, January 4, 1950,132152,132709
+Harry S. Truman, State of the Union Address, January 8, 1951,132709,133192
+Harry S. Truman, State of the Union Address, January 9, 1952,133192,133795
+Harry S. Truman, State of the Union Address, January 7, 1953,133795,134857
+Dwight D. Eisenhower, State of the Union Address, February 2, 1953,134857,135731
+Dwight D. Eisenhower, State of the Union Address, January 7, 1954,135731,136475
+Dwight D. Eisenhower, State of the Union Address, January 6, 1955,136475,137335
+Dwight D. Eisenhower, State of the Union Address, January 5, 1956,137335,138284
+Dwight D. Eisenhower, State of the Union Address, January 10, 1957,138284,138776
+Dwight D. Eisenhower, State of the Union Address, January 9, 1958,138776,139425
+Dwight D. Eisenhower, State of the Union Address, January 9, 1959,139425,140047
+Dwight D. Eisenhower, State of the Union Address, January 7, 1960,140047,140746
+Dwight D. Eisenhower, State of the Union Address, January 12, 1961,140746,141555
+John F. Kennedy, State of the Union Address, January 30, 1961,141555,142131
+John F. Kennedy, State of the Union Address, January 11, 1962,142131,142882
+John F. Kennedy, State of the Union Address, January 14, 1963,142882,143479
+Lyndon B. Johnson, State of the Union Address, January 8, 1964,143479,143862
+Lyndon B. Johnson, State of the Union Address, January 4, 1965,143862,144523
+Lyndon B. Johnson, State of the Union Address, January 12, 1966,144523,145180
+Lyndon B. Johnson, State of the Union Address, January 10, 1967,145180,146036
+Lyndon B. Johnson, State of the Union Address, January 17, 1968,146036,146701
+Lyndon B. Johnson, State of the Union Address, January 14, 1969,146701,147213
+Richard Nixon, State of the Union Address, January 22, 1970,147213,147762
+Richard Nixon, State of the Union Address, January 22, 1971,147762,148313
+Richard Nixon, State of the Union Address, January 20, 1972,148313,148814
+Richard Nixon, State of the Union Address, February 2, 1973,148814,149018
+Richard Nixon, State of the Union Address, January 30, 1974,149018,149571
+Gerald R. Ford, State of the Union Address, January 15, 1975,149571,150068
+Gerald R. Ford, State of the Union Address, January 19, 1976,150068,150672
+Gerald R. Ford, State of the Union Address, January 12, 1977,150672,151181
+Jimmy Carter, State of the Union Address, January 19, 1978,151181,151727
+Jimmy Carter, State of the Union Address, January 25, 1979,151727,152120
+Jimmy Carter, State of the Union Address, January 21, 1980,152120,152498
+Jimmy Carter, State of the Union Address, January 16, 1981,152498,156635
+Ronald Reagan, State of the Union Address, January 26, 1982,156635,157203
+Ronald Reagan, State of the Union Address, January 25, 1983,157203,157805
+Ronald Reagan, State of the Union Address, January 25, 1984,157805,158356
+Ronald Reagan, State of the Union Address, February 6, 1985,158356,158835
+Ronald Reagan, State of the Union Address, February 4, 1986,158835,159184
+Ronald Reagan, State of the Union Address, January 27, 1987,159184,159559
+Ronald Reagan, State of the Union Address, January 25, 1988,159559,160043
+George H.W. Bush, State of the Union Address, January 31, 1990,160043,160473
+George H.W. Bush, State of the Union Address, January 29, 1991,160473,160928
+George H.W. Bush, State of the Union Address, January 28, 1992,160928,161389
+William J. Clinton, State of the Union Address, January 25, 1994,161389,162165
+William J. Clinton, State of the Union Address, January 24, 1995,162165,163202
+William J. Clinton, State of the Union Address, January 23, 1996,163202,163905
+William J. Clinton, State of the Union Address, February 4, 1997,163905,164666
+William J. Clinton, State of the Union Address, January 27, 1998,164666,165477
+William J. Clinton, State of the Union Address, January 19, 1999,165477,166347
+William J. Clinton, State of the Union Address, January 27, 2000,166347,167194
+George W. Bush, State of the Union Address, February 27, 2001,167194,167684
+George W. Bush, State of the Union Address, September 20, 2001,167684,168029
+George W. Bush, State of the Union Address, January 29, 2002,168029,168467
+George W. Bush, State of the Union Address, January 28, 2003,168467,169047
+George W. Bush, State of the Union Address, January 20, 2004,169047,169606
+George W. Bush, State of the Union Address, February 2, 2005,169606,170136
+George W. Bush, State of the Union Address, January 31, 2006,170136,170713
+George W. Bush, State of the Union Address, January 23, 2007,170713,171290
+George W. Bush, State of the Union Address, January 28, 2008,171290,171898
+Barack Obama, State of the Union Address, February 24, 2009,171898,172510
+Barack Obama, State of the Union Address, January 27, 2010,172510,173259
+Barack Obama, State of the Union Address, January 25, 2011,173259,173993
+Barack Obama, State of the Union Address, January 24, 2012,173993,174740
+Barack Obama, State of the Union Address, February 12, 2013,174740,175453
+Barack Obama, State of the Union Address, January 28, 2014,175453,176173
+Barack Obama, State of the Union Address, January 20, 2015,176173,176866
+Barack Obama, State of the Union Address, January 12, 2016,176866,177471
