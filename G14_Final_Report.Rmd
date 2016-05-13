@@ -4,8 +4,33 @@ author: "Group 14"
 output: html_document
 ---
 
+
+```{r echo=FALSE}
+setwd('~/Desktop/EDAV/SOTU')
+```
+
 ##I. Introduction
-text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
+On January 8, 1790, President George Washington delivered the first annual State of the Union address to Congress in New York City. At the time, the United States was a newly formed nation, with a population of about 3.9 million. It was a time of new beginnings, and Washington's speech laid a positive foundation for the new government and presidency while touching on themes such as the separation of powers.^1^
+
+Over two hundred years later, on January 13, 2016, President Barack Obama again a delivered State of the Union. However, the world is a little different now than it was in 1790. The US now has a population of 318.9 million, can fly planes in the sky, and the Internet exists. There have been times of war and times of peace, and we have been governed by many different leaders along the way.
+
+Yet one thing has remained unchanged: every year, the president delivers the State of the Union speech to Congress.
+
+In this project, you will experience the story that this corpus of two-hundred twenty-four speeches tells about the evolution of our nation. Among other topics, our text analysis provides insight to the personalities of some the greatest American leaders, visualizes how the foreign policy has evolved, and shows how the speech structures reflect a shifting American culture. 
+
+<center>
+<figure> 
+<img src='george-sotu-crop.png' width = '366' height = '206' style='padding-right: 20px; padding-top: 10px; padding-bottom: 10px;'/> 
+<img src='obama-sotu.jpg' width = '366' height = '206' style='padding-right: 10px; padding-top: 10px; padding-bottom: 10px;' /> 
+</figure>
+</center>
+
+```{r echo=FALSE, include=FALSE}
+### NOTE - image references.
+# need to footnote them
+# george: Declaration Made in America. http://www.declarationclothing.com/blogs/blog/7137068-george-washington-state-of-the-union
+# obama: AP Photo/J. Scott Applewhite. VOA Learning English. http://learningenglish.voanews.com/a/state-of-the-union-2016/3142885.html
+```
 
 ##II. Analysis Part 1 (Time??)
 ### War & Peace
