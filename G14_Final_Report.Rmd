@@ -1,5 +1,5 @@
 ---
-title: "The Title is Not Decided Yet...."
+title: "My Fellow Americans..."
 author: "Group 14"
 output: html_document
 ---
@@ -32,7 +32,7 @@ In this project, you will experience the story that this corpus of two-hundred t
 # obama: AP Photo/J. Scott Applewhite. VOA Learning English. http://learningenglish.voanews.com/a/state-of-the-union-2016/3142885.html
 ```
 
-##II. Analysis Part 1 (Time??)
+##II. Word Frequency
 ### War & Peace
 We acquainted ourselves with the dataset by exploring two important key words: **war** and **peace**. After processing the text data into the Term Document Matrix (TDM), we were able to find word associations. The top terms correlated with **war** were _enemi_, _forc_, _shoot_, _air_, and _armi_. The top term associated with **peace** was _needfor_. In addition to finding associations in the TDM, we plotted the frequency of these words sequentially to get a sense of how the SOTU speeches have evolved over time. Our visualizations indicate peaks around the 150th SOTU speech, which was during the time of World War II, which lasted from 1939 to 1945. We see a peak in the frequency of the word **peace** just before WWII begins, and a peak in the word **war** a couple of years later. Placing these bar charts in context of larger world events shows the power of a simple visualization in telling a story.
 
@@ -575,3 +575,4 @@ Thank you, God bless you. God bless the United States of America.
 
 ##Reference
 [1] Radar Plot: http://bl.ocks.org/nbremer/6506614
+^1^ Groves, Anna. _First Annual Address to Congress_. www.mountvernon.org.
