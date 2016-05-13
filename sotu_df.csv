@@ -1,0 +1,224 @@
+Common,Length,President,Uniques,Year
+"[('public', 5), ('may', 5), ('great', 4), ('states', 4), ('united', 4), ('end', 4), ('measures', 4), ('country', 4), ('union', 4), ('government', 4)]",44,George Washington,387,1790
+"[('us', 8), ('made', 7), ('may', 6), ('public', 5), ('present', 4), ('great', 4), ('means', 4), ('national', 4), ('country', 4), ('union', 4)]",36,George Washington,498,1790
+"[('states', 18), ('united', 17), ('may', 13), ('public', 10), ('upon', 9), ('provision', 7), ('government', 7), ('proper', 7), ('made', 7), ('important', 7)]",39,George Washington,716,1791
+"[('upon', 11), ('among', 8), ('made', 8), ('provision', 7), ('information', 6), ('may', 6), ('law', 6), ('subject', 6), ('proper', 6), ('citizens', 6)]",34,George Washington,664,1792
+"[('states', 24), ('united', 22), ('may', 8), ('public', 7), ('shall', 7), ('within', 7), ('congress', 7), ('military', 6), ('without', 6), ('peace', 6)]",36,George Washington,688,1793
+"[('states', 19), ('united', 15), ('government', 14), ('may', 12), ('laws', 12), ('would', 10), ('militia', 10), ('constitution', 8), ('upon', 8), ('pennsylvania', 8)]",38,George Washington,1006,1794
+"[('indians', 9), ('country', 8), ('public', 7), ('may', 7), ('part', 6), ('tranquillity', 5), ('states', 5), ('united', 5), ('situation', 5), ('upon', 5)]",38,George Washington,707,1795
+"[('states', 16), ('united', 16), ('may', 12), ('public', 11), ('war', 11), ('state', 10), ('country', 9), ('government', 9), ('great', 8), ('nation', 8)]",36,George Washington,872,1796
+"[('states', 18), ('united', 18), ('treaty', 9), ('may', 8), ('commissioners', 8), ('citizens', 8), ('commerce', 7), ('within', 7), ('vessels', 6), ('measures', 6)]",35,John Adams,623,1797
+"[('states', 15), ('united', 14), ('france', 10), ('commerce', 8), ('part', 7), ('measures', 7), ('great', 6), ('may', 6), ('commissioners', 6), ('country', 6)]",38,John Adams,710,1798
+"[('states', 10), ('united', 10), ('government', 8), ('gentlemen', 7), ('country', 6), ('necessary', 5), ('great', 4), ('commissioners', 4), ('shall', 4), ('treaty', 4)]",41,John Adams,509,1799
+"[('may', 9), ('gentlemen', 8), ('public', 7), ('great', 7), ('states', 7), ('united', 7), ('congress', 6), ('protection', 5), ('commerce', 5), ('country', 5)]",34,John Adams,468,1800
+"[('may', 21), ('time', 11), ('laid', 9), ('peace', 9), ('states', 8), ('whether', 8), ('subject', 8), ('shall', 8), ('every', 7), ('also', 7)]",36,Thomas Jefferson,949,1801
+"[('may', 9), ('vessels', 9), ('part', 8), ('shall', 8), ('year', 7), ('debt', 7), ('necessary', 7), ('within', 7), ('public', 6), ('employed', 6)]",35,Thomas Jefferson,698,1802
+"[('us', 13), ('congress', 13), ('country', 10), ('millions', 9), ('states', 7), ('debt', 7), ('citizens', 7), ('within', 7), ('peace', 7), ('friendly', 6)]",45,Thomas Jefferson,720,1803
+"[('year', 9), ('us', 9), ('may', 8), ('country', 8), ('whether', 8), ('nations', 7), ('government', 7), ('within', 7), ('war', 7), ('peace', 7)]",40,Thomas Jefferson,640,1804
+"[('may', 16), ('us', 13), ('country', 11), ('millions', 10), ('state', 10), ('time', 10), ('service', 9), ('would', 8), ('vessels', 8), ('number', 8)]",37,Thomas Jefferson,854,1805
+"[('may', 17), ('public', 13), ('country', 12), ('necessary', 12), ('shall', 12), ('states', 11), ('time', 11), ('would', 9), ('present', 9), ('united', 8)]",37,Thomas Jefferson,830,1806
+"[('shall', 14), ('may', 12), ('peace', 12), ('us', 10), ('new', 9), ('whether', 8), ('harbors', 7), ('taken', 6), ('states', 6), ('law', 6)]",38,Thomas Jefferson,739,1807
+"[('states', 10), ('last', 10), ('united', 8), ('necessary', 8), ('us', 8), ('great', 7), ('rights', 7), ('may', 7), ('millions', 7), ('shall', 7)]",36,Thomas Jefferson,823,1808
+"[('states', 10), ('united', 10), ('may', 9), ('british', 7), ('minister', 7), ('government', 6), ('toward', 5), ('made', 5), ('proposals', 4), ('would', 4)]",45,James Madison,594,1809
+"[('states', 12), ('united', 12), ('would', 11), ('government', 11), ('may', 10), ('congress', 10), ('public', 7), ('commerce', 7), ('act', 7), ('great', 6)]",38,James Madison,777,1810
+"[('states', 14), ('united', 14), ('may', 9), ('british', 9), ('toward', 8), ('foreign', 8), ('trade', 7), ('government', 7), ('made', 7), ('commerce', 6)]",48,James Madison,725,1811
+"[('war', 20), ('enemy', 13), ('british', 12), ('without', 10), ('would', 9), ('states', 8), ('united', 7), ('nation', 7), ('could', 7), ('savages', 7)]",37,James Madison,1000,1812
+"[('war', 28), ('states', 18), ('british', 18), ('united', 15), ('enemy', 15), ('american', 11), ('great', 9), ('government', 9), ('would', 8), ('prisoners', 8)]",46,James Madison,960,1813
+"[('enemy', 14), ('american', 10), ('war', 10), ('great', 9), ('country', 7), ('force', 6), ('public', 6), ('also', 6), ('lake', 6), ('may', 5)]",42,James Madison,728,1814
+"[('public', 19), ('millions', 13), ('national', 13), ('peace', 12), ('congress', 12), ('states', 11), ('may', 10), ('war', 10), ('united', 9), ('establishment', 9)]",51,James Madison,929,1815
+"[('public', 15), ('states', 15), ('government', 14), ('may', 13), ('united', 12), ('congress', 11), ('treasury', 10), ('ports', 10), ('american', 9), ('country', 9)]",47,James Madison,967,1816
+"[('states', 26), ('may', 25), ('public', 22), ('congress', 18), ('united', 17), ('great', 16), ('government', 15), ('made', 15), ('millions', 14), ('state', 14)]",34,James Monroe,1077,1817
+"[('spain', 26), ('states', 25), ('government', 24), ('united', 23), ('great', 14), ('state', 14), ('congress', 13), ('every', 11), ('savages', 11), ('made', 11)]",37,James Monroe,1091,1818
+"[('states', 32), ('spain', 31), ('united', 31), ('government', 30), ('treaty', 30), ('may', 16), ('would', 14), ('minister', 14), ('great', 13), ('ratified', 10)]",35,James Monroe,1047,1819
+"[('great', 22), ('states', 16), ('united', 16), ('government', 16), ('made', 16), ('every', 11), ('may', 11), ('would', 10), ('congress', 10), ('public', 9)]",39,James Monroe,934,1820
+"[('states', 34), ('united', 34), ('would', 24), ('vessels', 23), ('government', 21), ('every', 19), ('may', 18), ('revenue', 18), ('powers', 18), ('great', 15)]",35,James Monroe,1178,1821
+"[('great', 26), ('states', 25), ('united', 19), ('act', 17), ('may', 16), ('last', 15), ('congress', 15), ('war', 14), ('every', 12), ('session', 11)]",37,James Monroe,1123,1822
+"[('states', 34), ('government', 25), ('united', 24), ('made', 22), ('great', 21), ('would', 18), ('may', 18), ('congress', 17), ('last', 16), ('department', 16)]",32,James Monroe,1430,1823
+"[('states', 35), ('great', 34), ('every', 32), ('may', 31), ('government', 25), ('made', 25), ('governments', 23), ('would', 22), ('public', 22), ('war', 21)]",33,James Monroe,1569,1824
+"[('upon', 44), ('congress', 36), ('may', 35), ('states', 30), ('last', 25), ('united', 24), ('public', 23), ('improvement', 22), ('first', 21), ('would', 20)]",42,John Quincy Adams,1938,1825
+"[('states', 48), ('united', 46), ('upon', 40), ('congress', 36), ('last', 32), ('year', 27), ('act', 24), ('may', 23), ('duties', 21), ('present', 21)]",44,John Quincy Adams,1643,1826
+"[('upon', 37), ('states', 33), ('united', 30), ('congress', 29), ('may', 21), ('public', 19), ('act', 18), ('government', 18), ('two', 16), ('1827', 16)]",42,John Quincy Adams,1650,1827
+"[('upon', 38), ('states', 34), ('congress', 30), ('great', 30), ('united', 26), ('year', 22), ('last', 21), ('may', 20), ('one', 20), ('union', 18)]",36,John Quincy Adams,1650,1828
+"[('government', 58), ('may', 51), ('states', 46), ('would', 41), ('upon', 37), ('public', 28), ('people', 23), ('state', 23), ('united', 23), ('great', 22)]",35,Andrew Jackson,2118,1829
+"[('states', 78), ('government', 68), ('upon', 67), ('would', 54), ('general', 49), ('public', 46), ('may', 43), ('people', 37), ('country', 36), ('great', 36)]",39,Andrew Jackson,2524,1830
+"[('states', 34), ('may', 30), ('government', 26), ('state', 24), ('present', 22), ('citizens', 21), ('congress', 19), ('made', 19), ('shall', 17), ('treaty', 17)]",43,Andrew Jackson,1607,1831
+"[('may', 36), ('government', 36), ('states', 34), ('public', 31), ('general', 23), ('upon', 23), ('made', 22), ('people', 20), ('commerce', 18), ('present', 18)]",40,Andrew Jackson,1718,1832
+"[('states', 54), ('united', 44), ('government', 43), ('public', 30), ('may', 27), ('upon', 27), ('made', 25), ('congress', 24), ('last', 21), ('year', 19)]",43,Andrew Jackson,1565,1833
+"[('government', 74), ('upon', 67), ('states', 65), ('united', 54), ('congress', 52), ('public', 45), ('would', 36), ('may', 35), ('made', 32), ('shall', 31)]",42,Andrew Jackson,2361,1834
+"[('government', 69), ('congress', 50), ('states', 49), ('united', 45), ('upon', 42), ('would', 36), ('public', 36), ('subject', 29), ('french', 28), ('made', 27)]",45,Andrew Jackson,2028,1835
+"[('states', 57), ('government', 57), ('would', 51), ('bank', 39), ('country', 39), ('made', 37), ('public', 36), ('upon', 35), ('people', 30), ('congress', 29)]",42,Andrew Jackson,2202,1836
+"[('government', 72), ('states', 60), ('public', 56), ('upon', 49), ('lands', 42), ('would', 40), ('united', 30), ('time', 29), ('congress', 29), ('made', 27)]",41,Martin van Buren,2152,1837
+"[('states', 74), ('government', 64), ('united', 60), ('upon', 47), ('public', 36), ('country', 35), ('congress', 31), ('state', 27), ('made', 25), ('court', 24)]",44,Martin van Buren,2178,1838
+"[('public', 71), ('government', 52), ('banks', 50), ('upon', 40), ('states', 36), ('country', 34), ('made', 34), ('state', 30), ('may', 28), ('present', 27)]",39,Martin van Buren,2421,1839
+"[('government', 67), ('public', 44), ('upon', 33), ('states', 30), ('may', 28), ('people', 24), ('general', 23), ('great', 22), ('every', 21), ('country', 20)]",49,Martin van Buren,1959,1840
+"[('government', 57), ('states', 43), ('may', 40), ('united', 26), ('upon', 25), ('great', 24), ('congress', 22), ('public', 21), ('power', 20), ('would', 19)]",39,John Tyler,1830,1841
+"[('would', 55), ('government', 50), ('states', 41), ('public', 28), ('may', 27), ('united', 27), ('great', 25), ('country', 20), ('time', 20), ('upon', 20)]",40,John Tyler,1854,1842
+"[('government', 57), ('states', 42), ('united', 30), ('country', 26), ('congress', 26), ('upon', 26), ('time', 23), ('would', 21), ('great', 21), ('mexico', 20)]",41,John Tyler,1772,1843
+"[('states', 59), ('government', 45), ('would', 42), ('upon', 39), ('united', 35), ('great', 31), ('may', 29), ('congress', 29), ('texas', 27), ('mexico', 26)]",35,John Tyler,1908,1844
+"[('states', 90), ('government', 86), ('united', 76), ('congress', 66), ('public', 58), ('may', 52), ('``', 48), ('country', 44), ('made', 44), ('mexico', 41)]",35,James Polk,2450,1845
+"[('mexico', 158), ('states', 120), ('united', 102), ('government', 92), ('texas', 91), ('upon', 70), ('war', 69), ('``', 64), ('mexican', 61), ('congress', 55)]",37,James Polk,2548,1846
+"[('mexico', 107), ('war', 94), ('states', 77), ('would', 74), ('may', 69), ('united', 68), ('government', 63), ('upon', 59), ('public', 49), ('peace', 48)]",36,James Polk,2465,1847
+"[('states', 113), ('upon', 86), ('government', 82), ('would', 75), ('country', 75), ('public', 75), ('war', 71), ('congress', 71), ('constitution', 65), ('people', 64)]",35,James Polk,3018,1848
+"[('states', 43), ('congress', 38), ('government', 34), ('united', 28), ('may', 21), ('new', 18), ('recommend', 18), ('treaty', 18), ('upon', 18), ('made', 18)]",35,Zachary Taylor,1680,1849
+"[('government', 46), ('may', 44), ('states', 36), ('country', 31), ('upon', 31), ('congress', 26), ('united', 24), ('duty', 22), ('duties', 21), ('shall', 20)]",35,Millard Fillmore,1879,1850
+"[('states', 65), ('year', 54), ('united', 52), ('congress', 48), ('government', 47), ('last', 44), ('country', 42), ('upon', 38), ('shall', 31), ('subject', 30)]",35,Millard Fillmore,2496,1851
+"[('government', 38), ('states', 37), ('country', 31), ('united', 28), ('subject', 26), ('made', 23), ('last', 22), ('upon', 22), ('may', 20), ('public', 20)]",35,Millard Fillmore,2160,1852
+"[('states', 63), ('upon', 38), ('public', 34), ('government', 34), ('united', 32), ('may', 26), ('country', 25), ('subject', 24), ('congress', 24), ('within', 23)]",42,Franklin Pierce,2090,1853
+"[('states', 60), ('united', 43), ('would', 39), ('government', 37), ('upon', 29), ('present', 25), ('public', 25), ('country', 22), ('may', 22), ('year', 21)]",38,Franklin Pierce,2216,1854
+"[('states', 135), ('united', 66), ('government', 57), ('great', 47), ('state', 38), ('rights', 36), ('union', 31), ('britain', 29), ('congress', 29), ('public', 27)]",43,Franklin Pierce,2236,1855
+"[('states', 111), ('united', 59), ('government', 45), ('congress', 36), ('upon', 32), ('union', 30), ('public', 28), ('citizens', 26), ('law', 25), ('great', 24)]",41,Franklin Pierce,2113,1856
+"[('``', 72), ('states', 63), ('would', 55), ('government', 52), ('people', 47), ('congress', 47), ('united', 45), ('shall', 44), ('constitution', 43), ('may', 43)]",33,James Buchanan,2347,1857
+"[('states', 95), ('government', 93), ('would', 74), ('united', 69), ('congress', 60), ('``', 52), ('upon', 45), ('may', 44), ('state', 42), ('shall', 40)]",30,James Buchanan,2676,1858
+"[('congress', 67), ('would', 63), ('``', 63), ('states', 57), ('government', 51), ('year', 43), ('power', 41), ('upon', 37), ('may', 35), ('last', 32)]",29,James Buchanan,2235,1859
+"[('states', 102), ('government', 81), ('constitution', 68), ('would', 62), ('state', 61), ('congress', 59), ('``', 54), ('people', 45), ('upon', 43), ('may', 42)]",28,James Buchanan,2409,1860
+"[('congress', 29), ('states', 28), ('government', 26), ('upon', 24), ('union', 21), ('one', 19), ('country', 18), ('general', 18), ('people', 17), ('labor', 17)]",31,Abraham Lincoln,1674,1861
+"[('would', 57), ('states', 53), ('people', 34), ('united', 29), ('time', 27), ('upon', 27), ('one', 24), ('shall', 24), ('may', 23), ('--', 23)]",23,Abraham Lincoln,1856,1862
+"[('states', 38), ('united', 27), ('may', 24), ('upon', 24), ('government', 21), ('service', 19), ('naval', 16), ('subject', 15), ('country', 15), ('war', 15)]",27,Abraham Lincoln,1562,1863
+"[('states', 32), ('year', 24), ('war', 22), ('congress', 21), ('government', 20), ('last', 20), ('would', 19), ('national', 18), ('great', 17), ('united', 16)]",26,Abraham Lincoln,1603,1864
+"[('states', 98), ('government', 58), ('united', 44), ('people', 34), ('constitution', 32), ('state', 32), ('country', 30), ('would', 27), ('one', 27), ('general', 25)]",34,Andrew Johnson,1953,1865
+"[('states', 75), ('government', 40), ('congress', 38), ('united', 34), ('upon', 29), ('year', 21), ('would', 19), ('constitution', 19), ('``', 19), ('people', 18)]",35,Andrew Johnson,1695,1866
+"[('states', 66), ('government', 59), ('constitution', 46), ('may', 45), ('upon', 40), ('would', 39), ('congress', 37), ('public', 33), ('country', 29), ('war', 29)]",32,Andrew Johnson,2445,1867
+"[('states', 59), ('government', 50), ('united', 38), ('upon', 38), ('year', 35), ('people', 34), ('war', 34), ('per', 29), ('would', 27), ('millions', 25)]",33,Andrew Johnson,2154,1868
+"[('states', 47), ('united', 40), ('government', 29), ('upon', 28), ('may', 24), ('congress', 24), ('made', 23), ('year', 21), ('country', 19), ('would', 18)]",31,Ulysses S. Grant,1714,1869
+"[('states', 76), ('united', 57), ('government', 34), ('may', 25), ('congress', 25), ('upon', 23), ('year', 22), ('great', 21), ('would', 19), ('present', 19)]",30,Ulysses S. Grant,1972,1870
+"[('states', 41), ('united', 34), ('government', 32), ('congress', 24), ('year', 20), ('recommend', 19), ('law', 19), ('upon', 18), ('country', 17), ('citizens', 17)]",30,Ulysses S. Grant,1582,1871
+"[('states', 30), ('united', 28), ('government', 25), ('treaty', 19), ('made', 19), ('great', 16), ('part', 16), ('congress', 15), ('may', 14), ('majesty', 14)]",33,Ulysses S. Grant,1029,1872
+"[('congress', 60), ('states', 54), ('united', 46), ('government', 42), ('year', 40), ('would', 34), ('country', 33), ('may', 29), ('last', 27), ('time', 25)]",34,Ulysses S. Grant,2140,1873
+"[('congress', 49), ('states', 41), ('government', 38), ('united', 30), ('upon', 30), ('would', 29), ('state', 27), ('--', 26), ('made', 24), ('may', 23)]",33,Ulysses S. Grant,1940,1874
+"[('states', 76), ('united', 59), ('government', 56), ('would', 42), ('may', 39), ('upon', 37), ('year', 33), ('congress', 31), ('time', 30), ('made', 23)]",34,Ulysses S. Grant,2368,1875
+"[('states', 50), ('united', 47), ('government', 31), ('would', 25), ('congress', 25), ('upon', 23), ('time', 20), ('made', 20), ('claims', 18), ('commission', 16)]",34,Ulysses S. Grant,1595,1876
+"[('public', 35), ('states', 33), ('upon', 33), ('government', 30), ('congress', 27), ('united', 26), ('country', 25), ('year', 24), ('may', 24), ('people', 22)]",34,Rutherford B. Hayes,1800,1877
+"[('year', 39), ('states', 38), ('congress', 32), ('government', 29), ('public', 24), ('country', 22), ('united', 22), ('upon', 21), ('report', 20), ('people', 20)]",29,Rutherford B. Hayes,1869,1878
+"[('congress', 63), ('states', 53), ('united', 46), ('year', 44), ('government', 44), ('service', 41), ('upon', 41), ('public', 40), ('made', 31), ('country', 29)]",34,Rutherford B. Hayes,2255,1879
+"[('government', 51), ('states', 34), ('congress', 28), ('united', 28), ('country', 27), ('upon', 22), ('people', 18), ('service', 17), ('attention', 15), ('relations', 15)]",33,Rutherford B. Hayes,1615,1880
+"[('government', 32), ('states', 23), ('united', 18), ('congress', 14), ('american', 12), ('relations', 12), ('00', 12), ('may', 10), ('friendly', 9), ('year', 9)]",25,Chester A. Arthur,1226,1881
+"[('government', 19), ('00', 16), ('states', 14), ('united', 14), ('congress', 12), ('country', 9), ('time', 9), ('american', 8), ('subject', 8), ('attention', 8)]",23,Chester A. Arthur,966,1882
+"[('government', 32), ('treaty', 22), ('00', 21), ('states', 19), ('united', 16), ('citizens', 13), ('country', 11), ('commission', 11), ('congress', 10), ('year', 9)]",20,Chester A. Arthur,1216,1883
+"[('government', 46), ('states', 36), ('may', 32), ('united', 29), ('congress', 27), ('secretary', 22), ('shall', 20), ('upon', 20), ('countries', 18), ('year', 18)]",29,Chester A. Arthur,2154,1884
+"[('government', 113), ('states', 79), ('upon', 74), ('united', 69), ('year', 55), ('may', 53), ('made', 47), ('law', 44), ('silver', 40), ('public', 40)]",34,Grover Cleveland,3550,1885
+"[('government', 87), ('year', 65), ('congress', 49), ('states', 46), ('last', 46), ('upon', 44), ('people', 41), ('may', 38), ('united', 37), ('present', 34)]",34,Grover Cleveland,2892,1886
+"[('upon', 33), ('tariff', 30), ('people', 29), ('duty', 23), ('price', 22), ('present', 21), ('government', 19), ('treasury', 18), ('thus', 18), ('may', 17)]",41,Grover Cleveland,1245,1887
+"[('government', 58), ('people', 40), ('upon', 29), ('states', 28), ('year', 26), ('last', 24), ('american', 23), ('made', 21), ('public', 20), ('congress', 19)]",35,Grover Cleveland,2217,1888
+"[('states', 58), ('upon', 52), ('government', 48), ('congress', 44), ('made', 42), ('law', 38), ('people', 34), ('united', 33), ('general', 31), ('public', 28)]",29,Benjamin Harrison,2520,1889
+"[('states', 48), ('upon', 48), ('year', 40), ('congress', 40), ('law', 39), ('united', 36), ('last', 30), ('government', 29), ('trade', 28), ('made', 27)]",30,Benjamin Harrison,2354,1890
+"[('government', 92), ('upon', 83), ('states', 81), ('year', 63), ('united', 59), ('would', 55), ('state', 37), ('law', 35), ('work', 34), ('congress', 34)]",34,Benjamin Harrison,2847,1891
+"[('upon', 63), ('year', 60), ('states', 53), ('great', 46), ('increase', 44), ('united', 41), ('1892', 40), ('american', 39), ('per', 39), ('government', 39)]",30,Benjamin Harrison,2574,1892
+"[('government', 109), ('states', 58), ('united', 49), ('upon', 39), ('congress', 38), ('gold', 32), ('spain', 31), ('made', 30), ('country', 29), ('war', 28)]",32,William McKinley,2413,1897
+"[('states', 116), ('government', 110), ('united', 100), ('war', 58), ('upon', 56), ('congress', 55), ('act', 45), ('may', 44), ('cuba', 43), (""'s"", 39)]",31,William McKinley,3700,1898
+"[('states', 96), ('united', 80), ('government', 70), ('american', 48), ('congress', 42), ('act', 40), ('year', 37), ('upon', 33), ('great', 32), ('may', 31)]",32,William McKinley,2973,1899
+"[('government', 109), ('states', 79), ('united', 64), ('congress', 55), ('islands', 53), ('made', 52), ('shall', 50), ('upon', 50), ('year', 47), ('may', 47)]",30,William McKinley,3580,1900
+"[('great', 60), ('government', 51), ('must', 50), ('men', 50), ('people', 48), ('would', 47), ('states', 44), ('american', 42), ('upon', 41), ('work', 40)]",29,Theodore Roosevelt,3270,1901
+"[('would', 36), ('congress', 35), ('country', 31), ('upon', 29), ('must', 26), ('made', 25), ('law', 23), ('good', 23), ('people', 22), ('great', 22)]",29,Theodore Roosevelt,2070,1902
+"[('states', 77), ('united', 68), ('--', 66), ('government', 60), ('treaty', 46), ('congress', 46), ('panama', 43), ('isthmus', 42), ('year', 38), ('public', 36)]",26,Theodore Roosevelt,2800,1903
+"[('government', 57), ('work', 50), ('states', 47), ('great', 45), ('would', 43), ('must', 42), ('upon', 40), ('good', 39), ('people', 38), ('may', 38)]",33,Theodore Roosevelt,3100,1904
+"[('government', 88), ('law', 71), ('would', 68), ('states', 63), ('great', 63), ('upon', 63), ('made', 59), ('must', 57), ('business', 55), ('one', 53)]",32,Theodore Roosevelt,3640,1905
+"[('government', 83), ('would', 75), ('upon', 65), ('law', 64), ('men', 63), ('people', 61), ('one', 55), ('states', 55), ('great', 52), ('must', 50)]",35,Theodore Roosevelt,3641,1906
+"[('upon', 101), ('government', 93), ('law', 79), ('public', 76), ('would', 75), ('country', 69), ('must', 66), ('national', 63), ('men', 60), ('great', 59)]",31,Theodore Roosevelt,3841,1907
+"[('great', 57), ('government', 56), ('people', 55), ('men', 51), ('one', 46), ('would', 45), ('work', 43), ('law', 43), ('power', 42), ('national', 39)]",31,Theodore Roosevelt,3220,1908
+"[('government', 80), ('states', 56), ('united', 52), ('department', 48), ('american', 41), ('upon', 38), ('shall', 36), ('congress', 36), ('state', 35), ('great', 34)]",36,William H. Taft,2456,1909
+"[('00', 56), ('government', 53), ('states', 45), ('united', 45), ('american', 34), ('year', 25), ('department', 24), ('international', 22), ('estimates', 20), ('--', 19)]",22,William H. Taft,1660,1910
+"[('government', 90), ('states', 75), ('american', 73), ('united', 63), ('congress', 62), ('would', 60), ('law', 57), ('great', 51), ('foreign', 49), ('statute', 49)]",32,William H. Taft,3495,1911
+"[('government', 121), ('states', 100), ('united', 97), ('american', 95), ('congress', 83), ('upon', 79), ('foreign', 72), ('department', 60), ('country', 54), ('would', 51)]",33,William H. Taft,3687,1912
+"[('upon', 20), ('country', 16), ('government', 14), ('people', 14), ('must', 13), ('shall', 13), ('may', 10), ('states', 9), ('business', 9), ('congress', 9)]",33,Woodrow Wilson,944,1913
+"[('great', 26), ('upon', 23), ('us', 21), ('people', 19), ('states', 15), ('means', 15), ('make', 14), ('every', 13), ('would', 13), ('government', 13)]",26,Woodrow Wilson,1060,1914
+"[('would', 34), ('one', 32), ('two', 28), ('year', 26), ('must', 23), ('great', 23), ('present', 23), ('government', 22), ('men', 21), ('hundred', 21)]",34,Woodrow Wilson,1597,1915
+"[('upon', 14), ('action', 12), ('necessary', 12), ('shall', 11), ('country', 11), ('public', 10), ('congress', 10), ('may', 9), ('commission', 9), ('present', 9)]",40,Woodrow Wilson,598,1916
+"[('war', 31), ('must', 28), ('people', 20), ('shall', 19), ('peace', 19), ('world', 18), ('purpose', 15), ('us', 13), ('men', 11), ('peoples', 11)]",29,Woodrow Wilson,968,1917
+"[('men', 27), ('war', 24), ('upon', 21), ('great', 20), ('every', 16), ('would', 16), ('may', 16), ('country', 16), ('necessary', 15), ('shall', 14)]",34,Woodrow Wilson,1312,1918
+"[('must', 23), ('labor', 18), ('government', 17), ('congress', 17), ('upon', 16), ('would', 15), ('america', 15), ('conditions', 15), ('country', 15), ('world', 15)]",30,Woodrow Wilson,1242,1919
+"[('government', 20), ('upon', 19), ('faith', 16), ('congress', 14), ('democracy', 11), ('war', 11), ('world', 10), ('states', 8), ('united', 8), ('year', 8)]",37,Woodrow Wilson,775,1920
+"[('would', 22), ('government', 22), ('american', 19), ('public', 16), ('conditions', 16), ('may', 15), ('congress', 15), ('must', 14), ('world', 14), ('law', 13)]",27,Warren Harding,1465,1921
+"[('world', 24), ('public', 24), ('american', 19), ('government', 18), ('transportation', 17), ('may', 17), ('well', 17), ('must', 16), ('service', 16), ('railway', 16)]",26,Warren Harding,1516,1922
+"[('government', 47), ('must', 37), ('public', 26), ('would', 20), ('law', 19), ('people', 19), ('service', 18), ('great', 17), ('national', 15), ('congress', 14)]",19,Calvin Coolidge,1586,1923
+"[('country', 34), ('government', 32), ('congress', 24), ('would', 23), ('great', 22), ('made', 21), ('public', 19), ('must', 18), ('one', 18), ('national', 18)]",26,Calvin Coolidge,1591,1924
+"[('made', 55), ('government', 47), ('congress', 43), ('country', 34), ('court', 32), ('upon', 30), ('ought', 30), ('would', 26), ('law', 23), ('service', 23)]",23,Calvin Coolidge,2122,1925
+"[('government', 49), ('country', 36), ('national', 31), ('made', 27), ('federal', 26), ('people', 25), ('present', 25), ('would', 24), ('congress', 23), ('ought', 23)]",24,Calvin Coolidge,2131,1926
+"[('government', 46), ('would', 45), ('made', 33), ('country', 25), ('congress', 25), ('public', 24), ('national', 23), ('people', 22), ('agriculture', 21), ('much', 19)]",20,Calvin Coolidge,1943,1927
+"[('government', 47), ('congress', 30), ('made', 27), ('states', 24), ('public', 23), ('year', 22), ('years', 21), ('country', 20), ('federal', 18), ('new', 17)]",22,Calvin Coolidge,1929,1928
+"[('government', 48), ('congress', 42), ('upon', 37), ('federal', 34), ('public', 33), ('states', 29), ('year', 28), ('national', 27), ('law', 25), ('country', 23)]",27,Herbert Hoover,2237,1929
+"[('year', 22), ('congress', 21), ('government', 19), ('construction', 19), ('upon', 18), ('public', 15), ('depression', 14), ('1928', 14), ('employment', 14), ('work', 13)]",28,Herbert Hoover,1205,1930
+"[('upon', 35), ('banks', 32), ('federal', 25), ('would', 25), ('government', 23), ('year', 21), ('action', 19), ('public', 17), ('credit', 17), ('meet', 17)]",23,Herbert Hoover,1360,1931
+"[('0', 8), ('1', 6), ('country', 6), ('public', 5), ('27', 5), ('measures', 5), ('8', 5), ('60', 5), ('states', 4), ('banks', 4)]",16,Herbert Hoover,378,1932
+"[('national', 12), ('people', 12), ('industrial', 9), ('many', 9), ('work', 8), ('--', 7), ('recovery', 7), ('country', 7), ('government', 7), ('time', 7)]",28,Franklin D. Roosevelt,731,1934
+"[('work', 19), ('relief', 17), ('government', 17), ('people', 17), ('national', 15), ('new', 13), ('public', 13), ('private', 13), ('security', 13), ('time', 13)]",25,Franklin D. Roosevelt,987,1935
+"[('``', 27), ('world', 25), ('people', 19), ('nations', 17), ('shall', 17), ('--', 16), ('say', 16), ('congress', 15), ('states', 14), ('united', 13)]",22,Franklin D. Roosevelt,1038,1936
+"[('government', 20), ('democracy', 16), ('new', 12), ('problems', 12), ('national', 11), ('many', 10), ('world', 10), ('congress', 10), ('action', 9), ('modern', 9)]",25,Franklin D. Roosevelt,846,1937
+"[('government', 41), ('nation', 25), ('--', 24), ('business', 23), ('people', 18), ('power', 15), ('income', 15), ('congress', 13), ('third', 12), (""'s"", 12)]",27,Franklin D. Roosevelt,1200,1938
+"[('--', 36), ('government', 25), ('must', 18), ('nation', 17), ('us', 17), ('new', 16), ('democracy', 15), ('may', 14), ('capital', 13), ('people', 13)]",22,Franklin D. Roosevelt,1046,1939
+"[('--', 32), ('world', 29), ('must', 17), ('nations', 15), ('nation', 14), ('trade', 13), ('peace', 13), ('united', 12), ('states', 11), ('american', 10)]",26,Franklin D. Roosevelt,891,1940
+"[('--', 30), ('world', 20), ('war', 16), ('must', 14), ('nation', 14), ('american', 12), ('nations', 12), ('new', 11), ('great', 10), ('national', 10)]",22,Franklin D. Roosevelt,937,1941
+"[('--', 44), ('war', 31), ('must', 18), ('united', 17), ('world', 17), ('people', 16), ('us', 16), ('shall', 15), ('one', 14), ('nations', 13)]",20,Franklin D. Roosevelt,944,1942
+"[('--', 58), ('war', 45), ('production', 22), ('world', 21), ('year', 18), ('united', 15), ('great', 14), ('people', 14), ('1942', 13), ('must', 13)]",23,Franklin D. Roosevelt,1191,1943
+"[('--', 53), ('war', 49), ('nation', 19), ('national', 17), ('service', 15), ('``', 13), ('people', 13), ('congress', 13), ('men', 12), ('right', 12)]",22,Franklin D. Roosevelt,1045,1944
+"[('--', 91), ('war', 75), ('must', 42), ('peace', 31), ('forces', 30), ('men', 23), ('new', 21), ('army', 20), ('us', 20), ('production', 19)]",24,Franklin D. Roosevelt,1798,1945
+"[('dollars', 206), ('war', 195), ('year', 184), ('million', 136), ('fiscal', 129), ('government', 127), ('expenditures', 120), ('program', 96), ('united', 92), ('--', 89)]",16,Harry S. Truman,3390,1946
+"[('national', 29), ('must', 27), ('congress', 27), ('labor', 25), ('world', 21), ('war', 20), ('program', 20), ('government', 17), ('housing', 16), ('legislation', 15)]",21,Harry S. Truman,1394,1947
+"[('must', 34), ('world', 31), ('economic', 24), ('people', 23), ('great', 19), ('--', 18), ('nation', 18), ('congress', 15), ('program', 14), ('high', 14)]",18,Harry S. Truman,1190,1948
+"[('must', 23), ('government', 22), ('congress', 17), ('people', 15), ('world', 14), ('prosperity', 12), ('production', 12), ('power', 10), ('housing', 10), ('great', 10)]",19,Harry S. Truman,970,1949
+"[('world', 27), ('must', 24), ('economic', 20), ('congress', 20), ('years', 18), ('life', 17), ('government', 17), ('nations', 16), ('us', 16), ('great', 15)]",22,Harry S. Truman,1157,1950
+"[('world', 33), ('free', 30), ('nations', 28), ('must', 19), ('soviet', 19), ('military', 16), ('defense', 16), ('need', 15), ('strength', 15), ('us', 15)]",17,Harry S. Truman,901,1951
+"[('world', 35), ('--', 33), ('must', 30), ('year', 29), ('defense', 25), ('peace', 23), ('people', 21), ('free', 19), ('us', 19), ('great', 17)]",18,Harry S. Truman,1200,1952
+"[('world', 97), ('--', 80), ('free', 78), ('war', 49), ('nations', 45), ('people', 37), ('soviet', 34), (""'s"", 31), ('would', 29), ('great', 29)]",22,Harry S. Truman,1929,1953
+"[('must', 45), ('--', 31), ('government', 29), ('federal', 21), ('labor', 21), ('nation', 20), ('one', 20), ('economic', 20), ('security', 19), ('policy', 19)]",20,Dwight D. Eisenhower,1705,1953
+"[('government', 40), ('shall', 26), ('program', 26), ('congress', 24), ('federal', 23), ('new', 21), ('year', 21), ('--', 19), ('world', 19), ('security', 17)]",21,Dwight D. Eisenhower,1524,1954
+"[('must', 46), ('federal', 39), ('government', 36), ('shall', 29), ('military', 28), ('program', 27), ('people', 26), ('year', 26), ('congress', 24), ('--', 24)]",22,Dwight D. Eisenhower,1703,1955
+"[('program', 43), ('must', 41), ('year', 33), ('federal', 30), ('people', 29), ('congress', 29), ('government', 27), ('new', 26), ('legislation', 25), ('--', 23)]",22,Dwight D. Eisenhower,1868,1956
+"[('world', 23), ('congress', 18), ('government', 17), ('free', 16), ('security', 16), ('--', 14), ('must', 14), ('nations', 14), ('economy', 12), (""'s"", 12)]",22,Dwight D. Eisenhower,1202,1957
+"[('world', 30), ('must', 28), ('military', 27), ('peace', 26), ('us', 21), ('one', 20), ('strength', 20), ('security', 20), ('people', 19), ('economic', 19)]",19,Dwight D. Eisenhower,1325,1958
+"[('must', 29), ('world', 26), ('--', 23), ('would', 17), ('nation', 16), ('congress', 16), ('freedom', 16), (""'s"", 15), ('year', 14), ('free', 13)]",19,Dwight D. Eisenhower,1388,1959
+"[('world', 34), ('must', 28), ('--', 28), ('nations', 27), ('free', 21), ('nation', 18), ('one', 17), ('peace', 17), ('freedom', 17), ('years', 16)]",22,Dwight D. Eisenhower,1608,1960
+"[('new', 37), ('federal', 28), ('years', 26), ('--', 25), ('program', 22), ('1953', 22), ('million', 21), ('world', 21), ('american', 21), ('government', 20)]",23,Dwight D. Eisenhower,1748,1961
+"[('--', 115), ('must', 26), ('world', 25), ('new', 20), ('national', 19), ('economic', 16), ('us', 15), ('congress', 15), ('nation', 14), ('program', 13)]",24,John F. Kennedy,1494,1961
+"[('--', 156), ('new', 43), ('world', 21), ('us', 20), ('free', 19), ('congress', 19), ('nations', 18), ('year', 18), ('nation', 17), ('united', 17)]",24,John F. Kennedy,1779,1962
+"[('--', 65), ('world', 24), ('nations', 21), ('free', 19), ('year', 19), ('tax', 19), ('defense', 17), ('new', 16), ('peace', 15), ('alliance', 14)]",22,John F. Kennedy,1472,1963
+"[('must', 44), ('--', 24), ('every', 18), ('session', 12), ('public', 11), ('new', 10), ('million', 10), ('help', 9), ('americans', 9), ('country', 9)]",23,Lyndon B. Johnson,948,1964
+"[('--', 41), ('new', 23), ('nation', 20), ('help', 19), ('world', 19), ('american', 17), ('people', 16), ('must', 15), ('first', 14), ('seek', 14)]",18,Lyndon B. Johnson,1123,1965
+"[('--', 60), ('vietnam', 32), ('people', 31), ('tonight', 25), ('must', 23), ('year', 22), ('nation', 20), ('world', 17), ('south', 15), ('peace', 15)]",21,Lyndon B. Johnson,1260,1966
+"[('--', 92), ('must', 36), ('``', 32), ('congress', 28), ('us', 26), ('people', 25), ('years', 24), ('new', 23), ('vietnam', 21), ('war', 20)]",20,Lyndon B. Johnson,1599,1967
+"[('--', 117), ('year', 36), ('congress', 32), ('billion', 27), ('must', 21), ('last', 20), (""'s"", 20), ('new', 19), ('act', 18), ('america', 17)]",19,Lyndon B. Johnson,1217,1968
+"[('--', 43), ('congress', 31), ('years', 25), ('year', 20), ('think', 19), ('believe', 17), ('us', 15), ('nation', 14), ('world', 14), ('tonight', 13)]",19,Lyndon B. Johnson,1036,1969
+"[('new', 33), ('america', 31), ('people', 23), ('world', 22), ('--', 18), ('congress', 17), ('time', 17), ('us', 16), ('peace', 16), ('american', 15)]",22,Richard Nixon,1083,1970
+"[('--', 57), ('government', 50), ('people', 44), ('congress', 34), ('us', 32), ('new', 29), ('america', 25), ('let', 24), ('great', 22), ('nation', 21)]",23,Richard Nixon,964,1971
+"[('--', 32), ('new', 25), ('congress', 23), ('nation', 22), ('america', 22), ('world', 20), ('years', 16), ('year', 16), ('us', 16), ('one', 15)]",23,Richard Nixon,1001,1972
+"[('--', 15), ('government', 14), ('must', 10), ('people', 10), ('american', 9), ('state', 9), ('years', 8), ('union', 8), ('congress', 8), ('resources', 7)]",28,Richard Nixon,504,1973
+"[('years', 40), ('america', 34), ('year', 29), ('peace', 27), ('world', 26), ('new', 22), ('one', 22), ('people', 22), ('american', 21), (""'s"", 20)]",25,Richard Nixon,1072,1974
+"[('new', 25), ('energy', 25), ('world', 25), ('congress', 21), ('--', 20), ('oil', 18), ('must', 17), ('tax', 17), ('federal', 17), ('people', 14)]",18,Gerald R. Ford,1135,1975
+"[('federal', 34), ('year', 30), ('--', 26), ('must', 24), ('america', 22), ('government', 22), (""'s"", 19), ('people', 18), ('world', 17), ('new', 16)]",18,Gerald R. Ford,1286,1976
+"[('president', 21), ('--', 20), ('energy', 20), ('congress', 20), ('new', 19), ('people', 19), ('years', 17), ('union', 17), ('peace', 16), ('government', 15)]",22,Gerald R. Ford,1280,1977
+"[('must', 32), ('people', 26), ('world', 24), ('government', 23), (""'s"", 20), ('us', 18), ('year', 17), ('american', 17), ('inflation', 17), (""'ve"", 16)]",19,Jimmy Carter,1123,1978
+"[('must', 31), ('world', 31), (""'s"", 21), ('peace', 17), ('american', 17), ('government', 17), ('--', 15), ('new', 15), ('year', 15), ('people', 15)]",21,Jimmy Carter,903,1979
+"[('soviet', 31), ('world', 27), (""'s"", 26), ('must', 22), ('america', 22), ('peace', 22), ('union', 18), ('--', 16), ('us', 16), ('states', 14)]",21,Jimmy Carter,893,1980
+"[(""'s"", 159), ('--', 154), ('administration', 142), ('congress', 129), ('new', 122), ('federal', 108), ('years', 101), ('government', 101), ('u', 101), ('policy', 99)]",22,Jimmy Carter,4210,1981
+"[(""'s"", 29), ('government', 29), ('programs', 27), ('--', 24), ('federal', 23), ('``', 20), ('america', 20), (""'ve"", 20), ('people', 17), ('tax', 16)]",20,Ronald Reagan,1378,1982
+"[('must', 35), (""'s"", 33), ('--', 33), ('us', 32), ('america', 25), ('also', 20), ('people', 19), ('year', 19), ('american', 19), ('economic', 18)]",21,Ronald Reagan,1435,1983
+"[(""'s"", 38), ('america', 30), ('people', 28), ('peace', 24), ('us', 23), ('must', 20), ('could', 18), ('--', 16), ('government', 15), ('hope', 14)]",17,Ronald Reagan,1391,1984
+"[('us', 27), ('years', 24), ('freedom', 20), (""'s"", 20), ('must', 19), ('new', 19), ('tax', 16), ('american', 16), ('--', 15), ('government', 15)]",18,Ronald Reagan,1276,1985
+"[('america', 28), (""'s"", 28), ('must', 19), ('us', 17), ('future', 15), ('--', 14), ('people', 14), ('work', 12), ('american', 12), ('tonight', 12)]",19,Ronald Reagan,1075,1986
+"[(""'s"", 31), ('--', 30), ('america', 26), ('people', 24), ('congress', 24), ('let', 19), ('``', 18), (""n't"", 17), ('well', 15), ('world', 13)]",18,Ronald Reagan,1138,1987
+"[(""'s"", 47), ('--', 43), ('let', 31), ('america', 31), ('us', 30), ('freedom', 21), ('government', 19), ('years', 18), ('world', 18), ('budget', 17)]",20,Ronald Reagan,1287,1988
+"[(""'s"", 54), ('every', 25), ('world', 24), ('america', 23), ('american', 20), ('one', 19), ('us', 19), ('must', 17), ('new', 17), ('year', 16)]",16,George H.W. Bush,991,1990
+"[(""'s"", 33), ('--', 30), ('world', 29), ('america', 20), ('us', 20), ('know', 17), ('american', 15), ('freedom', 15), ('future', 14), ('people', 14)]",16,George H.W. Bush,1093,1991
+"[(""'s"", 40), ('must', 29), ('people', 26), ('plan', 23), ('know', 22), ('world', 20), ('help', 18), ('new', 17), ('american', 17), ('right', 16)]",16,George H.W. Bush,1202,1992
+"[('people', 66), (""'s"", 50), ('health', 42), ('care', 41), ('work', 34), ('year', 32), ('--', 32), ('must', 31), (""n't"", 31), ('us', 28)]",20,William J. Clinton,1515,1994
+"[(""'s"", 80), ('people', 72), ('--', 44), ('work', 42), ('new', 41), (""n't"", 38), ('us', 37), ('government', 36), ('country', 33), ('years', 29)]",20,William J. Clinton,1691,1995
+"[('people', 43), ('challenge', 40), ('children', 36), (""'s"", 35), ('work', 34), ('america', 33), ('must', 30), ('congress', 30), ('--', 29), ('us', 29)]",18,William J. Clinton,1352,1996
+"[('must', 80), ('america', 48), ('every', 38), (""'s"", 34), ('new', 32), ('years', 32), ('--', 32), ('people', 31), ('world', 28), ('us', 28)]",19,William J. Clinton,1489,1997
+"[('new', 45), (""'s"", 42), ('america', 42), ('year', 33), ('--', 32), ('must', 30), ('every', 29), ('years', 26), ('congress', 25), ('children', 24)]",20,William J. Clinton,1680,1998
+"[('must', 48), (""'s"", 48), ('america', 36), ('century', 36), ('security', 30), ('new', 29), ('work', 29), ('year', 29), ('americans', 29), ('support', 28)]",19,William J. Clinton,1677,1999
+"[('--', 70), ('new', 51), ('must', 47), (""'s"", 44), ('america', 38), ('make', 34), ('children', 34), ('years', 30), ('work', 26), ('year', 26)]",18,William J. Clinton,1726,2000
+"[('applause', 90), ('must', 37), (""'s"", 34), ('budget', 26), ('america', 23), ('tax', 20), ('government', 19), ('social', 15), ('years', 15), ('care', 15)]",12,George W. Bush,1096,2001
+"[('--', 33), ('applause', 31), ('america', 21), ('world', 18), ('every', 17), ('americans', 14), ('us', 14), ('tonight', 13), ('many', 13), ('terrorists', 13)]",15,George W. Bush,864,2001
+"[('applause', 76), ('--', 38), ('america', 33), ('security', 19), ('must', 18), ('world', 18), ('american', 15), (""'s"", 15), ('terror', 14), ('people', 14)]",14,George W. Bush,1148,2002
+"[('people', 33), ('weapons', 28), ('america', 26), ('world', 26), ('country', 20), ('saddam', 19), ('hussein', 19), ('must', 18), ('americans', 17), ('many', 17)]",15,George W. Bush,1443,2003
+"[('applause', 72), ('america', 38), ('--', 33), (""'s"", 22), ('people', 20), ('must', 18), ('iraq', 17), ('help', 17), ('act', 17), ('health', 17)]",15,George W. Bush,1375,2004
+"[('applause', 67), ('--', 47), ('must', 29), ('security', 29), ('make', 21), ('freedom', 20), ('america', 19), ('people', 18), ('social', 18), ('country', 17)]",18,George W. Bush,1366,2005
+"[('applause', 66), ('--', 60), ('america', 43), ('world', 27), ('people', 22), ('us', 22), ('must', 20), ('american', 18), ('country', 17), ('freedom', 17)]",16,George W. Bush,1435,2006
+"[('applause', 64), ('--', 52), ('us', 29), ('america', 28), (""'s"", 26), ('iraq', 21), ('must', 18), ('people', 18), ('health', 18), ('help', 17)]",16,George W. Bush,1480,2007
+"[('applause', 72), ('america', 34), ('people', 31), ('must', 29), ('congress', 27), ('new', 25), ('year', 25), ('us', 23), ('iraq', 21), (""'ve"", 20)]",15,George W. Bush,1497,2008
+"[(""'s"", 37), (""n't"", 26), ('american', 26), ('know', 25), ('economy', 22), ('new', 21), ('people', 21), ('plan', 21), ('every', 20), ('health', 20)]",21,Barack Obama,1394,2009
+"[(""'s"", 87), (""n't"", 34), ('people', 32), ('year', 28), ('americans', 28), (""'re"", 25), ('america', 24), (""'ve"", 24), ('would', 23), ('jobs', 23)]",17,Barack Obama,1602,2010
+"[(""'s"", 78), ('new', 36), ('us', 33), ('people', 32), (""n't"", 32), ('years', 25), ('jobs', 25), (""'re"", 25), ('``', 24), ('make', 23)]",18,Barack Obama,1593,2011
+"[(""'s"", 80), (""n't"", 47), ('jobs', 34), ('american', 34), ('america', 33), (""'ve"", 28), ('new', 27), ('right', 27), ('get', 25), ('every', 23)]",17,Barack Obama,1635,2012
+"[(""'s"", 72), ('jobs', 32), ('america', 28), ('new', 24), (""n't"", 24), ('years', 22), ('get', 22), ('let', 22), ('--', 21), ('work', 20)]",19,Barack Obama,1623,2013
+"[(""'s"", 95), ('america', 39), ('help', 32), ('new', 29), ('work', 28), ('americans', 26), ('jobs', 25), ('every', 24), ('people', 24), ('--', 23)]",18,Barack Obama,1705,2014
+"[(""'s"", 100), ('new', 41), ('america', 38), ('us', 29), (""'ve"", 27), (""n't"", 26), ('years', 25), ('every', 24), ('make', 23), ('people', 23)]",18,Barack Obama,1588,2015

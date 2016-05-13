@@ -388,7 +388,7 @@ plot_ly(pca_rep, x = pc1, y = pc2, text = sotu_name, mode="markers", color = clu
 
 ##VI. Foreign Policy   
 When names of countries get mentioned during the speeches, it is usually that they demand national attention which reflect the foreign policy at that time. The instances of country names point to contemporaneous events. We can see the almost isolated reference of Vietnam in the 1960s (the Vietnam War), the bubbling of “Korea” in the 1950s (the Korean War), the rise and fall of soviet between 1945 and 1991, and the rise in “Iraq,” “Iran” and “Afghanistan” mentions in recent decades.       
-```{r,,echo=FALSE, warning=FALSE, message=FALSE}
+```{r,echo=FALSE, warning=FALSE, message=FALSE}
 library(reshape2)
 library(RColorBrewer)
 countries = speech[c("iran","afghanistan", "iraq", "korea", "vietnam", "german", "japan","soviet", "russia"),]
@@ -401,7 +401,43 @@ colnames(countries) = c("country", "year", "count")
 plot_ly(countries, x = year, y = country, size = count, text = TOC$President, mode="markers") %>% layout(title = 'Foreign Policy among the time')
 ```
 
-##VII. Conclusion
+##VIII. The Presidents' Lexicon
+In this section we will analyze how the linguistic structure of the SOTU speeches have evolved over time. In particular, we will investigate if they have gotten simpler or they became more complex. The proxy we will use for this is a fairly straight foward one: we will measure the average length of sentences in each speech, and also the number of unique words on them. In both cases a greater number implies greater complexity. The reference code for this analysis is located at the `text_analysis.ipynb` file.
+
+We start by looking at the average sentence length of the SOTU's.
+
+```{r,echo=FALSE, warning=FALSE, message=FALSE}
+sotu.summary <- read.csv("SOTU/sotu_df.csv")
+
+ggplot(data = sotu.summary, aes(x= Year, y = Length)) + geom_line() + stat_smooth() +
+  ggtitle("Average # Words in Sentence") + theme_classic()
+```
+
+There is clearly a downward trend in sentence length, implying that the speeches are becoming 'simpler' over time. This is not so much of a surprise as similar analysis done on other cultural sources, such as musical lyrics and newspaper articles show the same trend, so this is most likely the result of a cultural shift.
+
+Now, how does this compare to the number of unique words used on each speech? To make the analysis more relevant we remove all stopwords from the corpus.
+
+```{r,echo=FALSE, warning=FALSE, message=FALSE}
+ggplot(data = sotu.summary, aes(x= Year, y = Uniques)) + geom_line() + stat_smooth() +
+  ggtitle("# Unique Words in Sentence") + theme_classic()
+```
+
+Interestingly there is not a clear pattern on this measure, which is probably indicative of the variable being more sensitive to who is giving the speech rather than when it was given. What if we look at individual presidents, and evaluate their average vocabulary length instead? We will only consider presidents with more than one term (i.e. popular ones) to not overwhelm the reader.
+
+```{r,echo=FALSE, warning=FALSE, message=FALSE}
+sotu.summary %>%
+  group_by(President) %>%
+  summarise(count = n(), Unique = mean(Uniques)) %>%
+  filter(count > 4) %>%
+  ggplot() + geom_bar(aes(x=reorder(President, Unique), y=Unique), stat = "identity") +
+  ggtitle("Unique Words by President (>1 Term)") +
+  xlab("") + 
+  coord_flip() + theme_classic()
+```
+
+We see that George Washington had a relatively limited vocabulary, while Roosevelt was the most well-versed one. Looking at recent presidents, we see that Obama ranks relatively high, while W. Bush lies on the middle of the table.
+
+##VIII. Conclusion
 text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
 
 ##Reference
