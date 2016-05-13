@@ -66,15 +66,71 @@ peace <- ggplot(count.peace, aes(x = nums, y = count.peace$V1)) + geom_bar(stat=
 
 # Plots
 require(gridExtra) 
-#dev.off()
 grid.arrange(war, peace, nrow=2)
-#print(war)
-#print(peace)
 ```
 
+```{r echo = FALSE, warning = FALSE, message = FALSE}
+library(tm)
+library(topicmodels)
+library(wordcloud)
+library(RColorBrewer)
 
-text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
+## Prepare the data
+#TOC <- read.csv('SOTU_table_of_contents.csv')
 
+#full <- read.table('State of the Union Addresses 1970-2016.txt',
+#                   quote="",
+#                   blank.lines.skip=FALSE,
+#                   fill=FALSE,
+#                   sep ='\n',
+#                   skipNul = FALSE)
+
+docs <- c()
+for (i in c(1:dim(TOC)[1])){
+  SOTU <- droplevels(full[TOC$Speech_Start_Line[i]:TOC$Speech_End_Line[i],])
+  SOTU = as.vector(SOTU)
+  docs <- cbind(docs, SOTU)
+}
+
+# For each column, collapse the rows into one row. this becomes the document.
+docs2 <- c()
+for (i in 1:224) {
+  docs2 <- cbind(docs2, paste(unlist(docs[,i]), collapse=""))
+}
+
+# Create a corpus
+corp <- Corpus(VectorSource(docs2))
+
+# Lowercase
+corp <- tm_map(corp, content_transformer(tolower))
+
+# Remove Whitespace
+corp <- tm_map(corp, stripWhitespace)
+
+# Create Term Document Matrix
+tdm <- TermDocumentMatrix(corp,
+                          control = list(stemming = TRUE, stopwords = TRUE, 
+                                         minWordLength = 3, removeNumbers = TRUE, 
+                                         removePunctuation = TRUE))
+
+# Word Cloud
+mTDM <- as.matrix(tdm)
+v <- sort(rowSums(mTDM),decreasing=TRUE)
+d <- data.frame(word = names(v),freq=v)
+pal <- brewer.pal(9, "BuGn")
+pal <- pal[-(1:2)]
+png("wordcloud.png", width=1280,height=800)
+wordcloud(d$word,d$freq, scale=c(8,.3),min.freq=2,max.words=100, random.order=T, rot.per=.15, colors=pal, vfont=c("sans serif","plain"))
+```
+
+``` {r echo = FALSE, include = FALSE}
+### Code for word associations from War & Peace section
+# which words are associated with 'war'?
+findAssocs(tdm, "war", 0.31)
+
+# which words are associated with 'peace'?
+findAssocs(tdm, "peace", 0.39)
+```
 
 ###Our Pronouns, Ourselves
 
