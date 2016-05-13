@@ -458,12 +458,12 @@ plot_ly(countries, x = year, y = country, size = count, text = TOC$President, mo
 ```
 
 ##VIII. The Presidents' Lexicon
-In this section we will analyze how the linguistic structure of the SOTU speeches have evolved over time. In particular, we will investigate if they have gotten simpler or they became more complex. The proxy we will use for this is a fairly straight foward one: we will measure the average length of sentences in each speech, and also the number of unique words on them. In both cases a greater number implies greater complexity. The reference code for this analysis is located at the `text_analysis.ipynb` file.
+In this section we will analyze how the linguistic structure of the SOTU speeches have evolved over time. In particular, we will investigate if they have gotten simpler or they became more complex. The proxy we will use for this is a fairly straight forward one: we will measure the average length of sentences in each speech, and also the number of unique words on them. In both cases a greater number implies greater complexity. The reference code for this analysis is located at the `text_analysis.ipynb` file.
 
 We start by looking at the average sentence length of the SOTU's.
 
 ```{r,echo=FALSE, warning=FALSE, message=FALSE}
-sotu.summary <- read.csv("SOTU/sotu_df.csv")
+sotu.summary <- read.csv("sotu_df.csv")
 
 ggplot(data = sotu.summary, aes(x= Year, y = Length)) + geom_line() + stat_smooth() +
   ggtitle("Average # Words in Sentence") + theme_classic()
@@ -478,7 +478,7 @@ ggplot(data = sotu.summary, aes(x= Year, y = Uniques)) + geom_line() + stat_smoo
   ggtitle("# Unique Words in Sentence") + theme_classic()
 ```
 
-Interestingly there is not a clear pattern on this measure, which is probably indicative of the variable being more sensitive to who is giving the speech rather than when it was given. What if we look at individual presidents, and evaluate their average vocabulary length instead? We will only consider presidents with more than one term (i.e. popular ones) to not overwhelm the reader.
+Interestingly there is not a clear pattern on this measure, which is probably indicative of the variable being more sensitive to who is giving the speech rather than when it was given. What if we look at individual presidents, and evaluate their average vocabulary length instead? We will only consider presidents with more than four speeches (i.e. popular ones) to not overwhelm the reader.
 
 ```{r,echo=FALSE, warning=FALSE, message=FALSE}
 sotu.summary %>%
@@ -492,6 +492,64 @@ sotu.summary %>%
 ```
 
 We see that George Washington had a relatively limited vocabulary, while Roosevelt was the most well-versed one. Looking at recent presidents, we see that Obama ranks relatively high, while W. Bush lies on the middle of the table.
+
+Finally we will look at the favorite words for some selected presidents, specifically: George Washington, Theodore Roosevelt, John F. Kennedy, and George W. Bush. The favorite words are the most mentioned ones on their speeches.
+
+<center> <h4> George Washington </h3> </center>
+<center> <img src="Presidents/washington.png" height="400px" width="800px" /> </center>
+<center> <h4> Theodore Roosevelt </h3> </center>
+<center> <img src="Presidents/theodore.png" height="400px" width="800px" /> </center>
+<center> <h4> John F. Kennedy </h3> </center>
+<center> <img src="Presidents/kennedy.png" height="400px" width="800px" /> </center>
+<center> <h4> George W. Bush </h3> </center>
+<center> <img src="Presidents/bush.png" height="400px" width="800px" /> </center>
+
+```{r,echo=FALSE, warning=FALSE, message=FALSE}
+#library(RXKCD)
+#library(tm)
+#library(wordcloud)
+#library(RColorBrewer)
+
+#washington <- read.csv("Presidents/GeorgeWashington.csv")
+#theodore <- read.csv("Presidents/TheodoreRoosevelt.csv")
+#bush <- read.csv("Presidents/GeorgeWBush.csv")
+#kennedy <- read.csv("Presidents/JohnFKennedy.csv")
+#kennedy <- kennedy[2:nrow(kennedy),]
+
+## Pallete
+#pal <- brewer.pal(4, "BuGn")
+#pal <- pal[-(1:2)]
+
+## Washington
+#png("Presidents/washington.png", width=640,height=400)
+#wordcloud(words = washington$X, freq = washington$George.Washington,
+#          scale=c(5,.3),min.freq=2,max.words=100,
+#          random.order=T, rot.per=.15, colors=pal, vfont=c("sans serif","plain"))
+#dev.off()
+
+## Roosevelt
+#png("Presidents/theodore.png", width=640,height=400)
+#wordcloud(words = theodore$X, freq = theodore$Theodore.Roosevelt,
+#          scale=c(5,.3),min.freq=2,max.words=100,
+#          random.order=T, rot.per=.15, colors=pal, vfont=c("sans serif","plain"))
+#dev.off()
+
+## Bush
+#png("Presidents/bush.png", width=640,height=400)
+#wordcloud(words = bush$X, freq = bush$George.W..Bush,
+#         scale=c(5,.3),min.freq=2,max.words=100,
+#         random.order=T, rot.per=.15, colors=pal, vfont=c("sans serif","plain"))
+#dev.off()
+
+## Kennedy
+#png("Presidents/kennedy.png", width=640,height=400)
+#wordcloud(words = kennedy$X, freq = kennedy$John.F..Kennedy,
+#        scale=c(5,.3),min.freq=2,max.words=100,
+#        random.order=T, rot.per=.15, colors=pal, vfont=c("sans serif","plain"))
+#dev.off()
+
+
+```
 
 ##VIII. Conclusion
 
