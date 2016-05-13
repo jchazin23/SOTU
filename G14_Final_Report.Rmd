@@ -13,20 +13,19 @@ text text text text text text text text text text text text text text text text 
 ##III. Topic Analysis
 In this part, we did topic analysis over the speeches of presidents using LDA. We first discovered the possible five topics among all speeches. Each speech will be assigned to a topic. The related words of each topic will aslo show in the legend of each plot. We then discovered the topics of speeches for republican presidents and for democratic presidents. We expect some differences between the topics for different parties. 
 
-```{r echo=FALSE,results="asis", message=FALSE, warning=FALSE}
-require(tm)
-require(topicmodels)
+```{r echo=FALSE,include=FALSE}
+library(tm)
+library(topicmodels)
 library(RTextTools)
-require(ggplot2)
+library(ggplot2)
 library(rJava)
 
-setwd("/Users/vernon/Dropbox/courses/Columbia/STAT_W4701_EDA_and_visualization/hw/hw4")
-#dir("/Users/vernon/Dropbox/courses/Columbia/STAT_W4701_EDA_and_visualization/hw/hw4")
 speech = read.csv("Word_Document_Matrix.csv", na.strings = "NA")
 nouns = read.table("nouns.txt")
 noun = as.character(nouns$V1)
 nouns = read.delim("nouns.txt", sep = "\n")
-
+docinfo = read.csv('SOTU_table_of_contents.csv')
+Year = as.vector(docinfo$Year)
 
 #dim(speech)
 #colnames(speech)
@@ -60,14 +59,18 @@ mterms = apply(mterms,MARGIN=2,paste,collapse=', ')
 
 # First topic identified for every document
 mtopic = topics(mlda,1)
-mtopics = data.frame(doc=1:224,topic1=mtopic)
-qplot(doc,..count..,data=mtopics,geom='density',fill=mterms[mtopic],position='stack', alpha=I(0.3)) + ggtitle("top five topics distribution") + scale_fill_discrete( "top terms related to each topic") 
+mtopics = data.frame(Year=Year,topic1=mtopic)
 ```
+```{r echo=FALSE, fig.width=9, fig.height=4, fig.align='center', warning=FALSE}
+qplot(Year,..count..,data=mtopics,geom='density',fill=mterms[mtopic],position='stack', alpha=I(0.3)) + 
+  ggtitle("Top 5 Topics Distribution") +
+  scale_fill_discrete( "Topic Key Words") + ylab("% Frequency of Topic being in the Speech") +
+  theme(legend.position="top", axis.title=element_text(size=10)) +
+  guides(fill=guide_legend(title.theme = element_text(size=10, angle = 0), title.position = "top", nrow=2,byrow=TRUE))
+```
+Next, we would like to study the topics in the Union of the State speech texts by party and try to discover the difference between the Republican and Democratic leaders.
 
-Discover the difference between the republican and democratic
-
-
-```{r echo=FALSE,results="asis", message=FALSE, warning=FALSE}
+```{r echo=FALSE,include=FALSE}
 party = read.csv("USPresident-Wikipedia-URLs-Thmbs-HS.csv")
 speech_pred = read.csv("SOTU_table_of_contents.csv")
 party = as.data.frame(party)
@@ -85,8 +88,17 @@ mterms = apply(mterms,MARGIN=2,paste,collapse=', ')
 
 mtopic = topics(mlda,1)
 mtopics = data.frame(doc=1:101,topic1=mtopic)
-qplot(doc,..count..,data=mtopics,geom='density',fill=mterms[mtopic],position='stack',alpha=I(0.3)) + ggtitle("five topics distribution among democratic presidents") + scale_fill_discrete( "top terms related to each topic")
+```
 
+```{r echo=FALSE, fig.width=9, fig.height=4, fig.align='center', warning=FALSE}
+qplot(doc,..count..,data=mtopics,geom='density',fill=mterms[mtopic],position='stack',alpha=I(0.3)) +
+  ggtitle("Democratic Presidents - Top 5 Topics") +
+  scale_fill_discrete( "Topic Key Words") + ylab("% Frequency of Topic being in the Speech") +
+  theme(legend.position="top", axis.title=element_text(size=10)) + 
+  guides(fill=guide_legend(title.theme = element_text(size=10, angle = 0), title.position = "top", nrow=2,byrow=TRUE))
+```
+
+```{r echo=FALSE,include=FALSE}
 #the topic for republican president
 repu_noun_t = as.data.frame(t(repu))
 mlda = LDA(repu_noun_t,k=5)
@@ -95,19 +107,21 @@ mterms = apply(mterms,MARGIN=2,paste,collapse=', ')
 
 mtopic = topics(mlda,1)
 mtopics = data.frame(doc=1:104,topic1=mtopic)
-qplot(doc,..count..,data=mtopics,geom='density',fill=mterms[mtopic],position='stack',alpha=I(0.3)) + ggtitle("top five topics distribution among republican presidents") + scale_fill_discrete( "top terms related to each topic")
-
-
 ```
 
-As we can see the topics for of speeches of presidents from different parties are different. 
+```{r echo=FALSE, fig.width=9, fig.height=4, fig.align='center', warning=FALSE}
+qplot(doc,..count..,data=mtopics,geom='density',fill=mterms[mtopic],position='stack',alpha=I(0.3)) +
+  ggtitle("Republican Presidents - Top 5 Topics") +
+  scale_fill_discrete( "Topic Key Words") + ylab("% Frequency of Topic being in the Speech") +
+  theme(legend.position="top", axis.title=element_text(size=10)) + 
+  guides(fill=guide_legend(title.theme = element_text(size=10, angle = 0), title.position = "top", nrow=2,byrow=TRUE))
+```
+
+As we can see that the topic key words are clearly different between the presidents from the two parties. Some key words from the Democratic presidents' speeches are congress, power, war, peace, etc. Some key words from the Republican presidents' speeches are secure, power, work, tax, constitutes, etc. However, for both parties, there are definitely more diversity in topics nowadays than 150 years agao.
 
 
 
-
-
-
-###3.1 Personality Analysis for 6 Presidents
+##IV. Personality Analysis for 6 Presidents
 
 In this part, we select 6 presidents and study their personalities based on the Personality Insights analysis from IBM Watson. We not only want to compare different individual presidents' personalities, but also would like to see the time/generation difference. So we picked the presidents in two groups: those before the 1940s and those after the 1990s. We would like to compare if the presidents demonstrate strong personality differences through their Union of the State speeches, and if the presidents from different times tend to show some common features. So we choose George Washington, Thomas Jefferson, Franklin D. Roosevelt, William J. Clinton, George W. Bush and Barack Obama.
 
@@ -148,7 +162,7 @@ From the above radar plot for Needs, we can clearly that the 6 presidents can be
 
 With these plots and personality analyses, we are able to see what kind of values and personalities the presidents show through their Union of the State speeches. These may not be the same as their real personality, however, these are the interpretation of their personalities as presidents of the United States.
 
-##IV. Conclusion
+##V. Conclusion
 text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
 
 ##Reference
