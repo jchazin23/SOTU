@@ -495,14 +495,7 @@ We see that George Washington had a relatively limited vocabulary, while Rooseve
 
 Finally we will look at the favorite words for some selected presidents, specifically: George Washington, Theodore Roosevelt, John F. Kennedy, and George W. Bush. The favorite words are the most mentioned ones on their speeches.
 
-<center> <h4> George Washington </h3> </center>
-<center> <img src="Presidents/washington.png" height="400px" width="800px" /> </center>
-<center> <h4> Theodore Roosevelt </h3> </center>
-<center> <img src="Presidents/theodore.png" height="400px" width="800px" /> </center>
-<center> <h4> John F. Kennedy </h3> </center>
-<center> <img src="Presidents/kennedy.png" height="400px" width="800px" /> </center>
-<center> <h4> George W. Bush </h3> </center>
-<center> <img src="Presidents/bush.png" height="400px" width="800px" /> </center>
+<center> <img src="Presidents/PresidentFavs.png" height="400px" width="800px" /> </center>
 
 ```{r,echo=FALSE, warning=FALSE, message=FALSE}
 #library(RXKCD)
