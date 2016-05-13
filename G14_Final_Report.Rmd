@@ -8,18 +8,84 @@ output: html_document
 text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
 
 ##II. Analysis Part 1 (Time??)
+### War & Peace
+We acquainted ourselves with the dataset by exploring two important key words: **war** and **peace**. After processing the text data into the Term Document Matrix (TDM), we were able to find word associations. The top terms correlated with **war** were _enemi_, _forc_, _shoot_, _air_, and _armi_. The top term associated with **peace** was _needfor_. In addition to finding associations in the TDM, we plotted the frequency of these words sequentially to get a sense of how the SOTU speeches have evolved over time. Our visualizations indicate peaks around the 150th SOTU speech, which was during the time of World War II, which lasted from 1939 to 1945. We see a peak in the frequency of the word **peace** just before WWII begins, and a peak in the word **war** a couple of years later. Placing these bar charts in context of larger world events shows the power of a simple visualization in telling a story.
+
+```{r echo=FALSE, fig.width=9, fig.height=4, fig.align='center', warning=FALSE, message=FALSE}
+library(RTextTools)
+library(dplyr)
+library(ggplot2)
+library(gdata)
+
+## Prepare the data
+TOC <- read.csv('SOTU_table_of_contents.csv')
+
+full <- read.table('State of the Union Addresses 1970-2016.txt',
+                   quote="",
+                   blank.lines.skip=FALSE,
+                   fill=FALSE,
+                   sep ='\n',
+                   skipNul = FALSE)
+
+## This part takes awhile to load 
+docs <- c()
+for (i in c(1:dim(TOC)[1])){
+  SOTU <- drop.levels(full[TOC$Speech_Start_Line[i]:TOC$Speech_End_Line[i],])
+  SOTU = as.vector(SOTU)
+  # remove punctuation
+  SOTU = gsub("[[:punct:]]", "", SOTU)
+  # lowercase
+  Text = tolower(paste(SOTU[which(SOTU!="")], collapse=" "))
+  # stemming, whitespace 
+  Word = wordStem(unlist(strsplit(Text, split=" ")), "english")
+  docs <- cbind(docs, Word)
+}
+
+# War
+nums <- 1:224
+count.war <- c()
+for (i in nums) {
+  x <- length(which(docs[,i] == 'war'))
+  count.war <- cbind(count.war, x)
+}
+count.war <- as.matrix(count.war)
+count.war <- t(count.war)
+count.war <- as.data.frame(count.war)
+war <- ggplot(count.war, aes(x = nums, y = count.war$V1)) + geom_bar(stat='identity') + ggtitle('Frequency of Word "War"') + xlab('') + ylab('Count') 
+
+# Peace
+count.peace <- c()
+for (i in nums) {
+  p <- length(which(docs[,i] == 'peac'))
+  count.peace <- cbind(count.peace, p)
+}
+count.peace <- as.matrix(count.peace)
+count.peace <- t(count.peace)
+count.peace <- as.data.frame(count.peace)
+peace <- ggplot(count.peace, aes(x = nums, y = count.peace$V1)) + geom_bar(stat='identity') + ggtitle('Frequency of Word "Peace"') + xlab('Sequential Order of Speeches') + ylab('Count') 
+
+# Plots
+require(gridExtra) 
+#dev.off()
+grid.arrange(war, peace, nrow=2)
+#print(war)
+#print(peace)
+```
+
+
 text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
 
 ##III. Topic Analysis
-In this part, we did topic analysis over the speeches of presidents using LDA. We first discovered the possible five topics among all speeches. Each speech will be assigned to a topic. The related words of each topic will aslo show in the legend of each plot. We then discovered the topics of speeches for republican presidents and for democratic presidents. We expect some differences between the topics for different parties. 
+In this part, we did topic analysis over the speeches of presidents using LDA. We first discovered the possible five topics among all speeches. Each speech will be assigned to a topic. The related words of each topic will aslo show in the legend of each plot. We then discovered the topics of speeches for both Republican and Democrat presidents. We expect some differences between the topics for different parties. 
 
-```{r echo=FALSE,include=FALSE}
+```{r echo=FALSE, warning=FALSE, message=FALSE}
 library(tm)
 library(topicmodels)
 library(RTextTools)
 library(ggplot2)
 library(rJava)
 
+setwd('~/Desktop/EDAV/SOTU')
 speech = read.csv("Word_Document_Matrix.csv", na.strings = "NA")
 nouns = read.table("nouns.txt")
 noun = as.character(nouns$V1)
@@ -68,7 +134,7 @@ qplot(Year,..count..,data=mtopics,geom='density',fill=mterms[mtopic],position='s
   theme(legend.position="top", axis.title=element_text(size=10)) +
   guides(fill=guide_legend(title.theme = element_text(size=10, angle = 0), title.position = "top", nrow=2,byrow=TRUE))
 ```
-Next, we would like to study the topics in the Union of the State speech texts by party and try to discover the difference between the Republican and Democratic leaders.
+Next, we would like to study the topics in the State of the Union speech texts by party and try to discover the difference between the Republican and Democratic leaders.
 
 ```{r echo=FALSE,include=FALSE}
 party = read.csv("USPresident-Wikipedia-URLs-Thmbs-HS.csv")
@@ -117,15 +183,15 @@ qplot(doc,..count..,data=mtopics,geom='density',fill=mterms[mtopic],position='st
   guides(fill=guide_legend(title.theme = element_text(size=10, angle = 0), title.position = "top", nrow=2,byrow=TRUE))
 ```
 
-As we can see that the topic key words are clearly different between the presidents from the two parties. Some key words from the Democratic presidents' speeches are congress, power, war, peace, etc. Some key words from the Republican presidents' speeches are secure, power, work, tax, constitutes, etc. However, for both parties, there are definitely more diversity in topics nowadays than 150 years agao.
+As we can see that the topic key words are clearly different between the presidents from the two parties. Some key words from the Democratic presidents' speeches are congress, power, war, peace, etc. Some key words from the Republican presidents' speeches are secure, power, work, tax, constitutes, etc. However, for both parties, there is definitely more diversity among topics nowadays than 150 years ago.
 
 
 
 ##IV. Personality Analysis for 6 Presidents
 
-In this part, we select 6 presidents and study their personalities based on the Personality Insights analysis from IBM Watson. We not only want to compare different individual presidents' personalities, but also would like to see the time/generation difference. So we picked the presidents in two groups: those before the 1940s and those after the 1990s. We would like to compare if the presidents demonstrate strong personality differences through their Union of the State speeches, and if the presidents from different times tend to show some common features. So we choose George Washington, Thomas Jefferson, Franklin D. Roosevelt, William J. Clinton, George W. Bush and Barack Obama.
+In this part, we select 6 presidents and study their personalities based on the Personality Insights analysis from IBM Watson. We not only want to compare different individual presidents' personalities, but also would like to see the time/generation difference. So we picked the presidents in two groups: those before the 1940s and those after the 1990s. We would like to compare if the presidents demonstrate strong personality differences through their State of the Union speeches, and if the presidents from different times tend to show some common features. So we choose George Washington, Thomas Jefferson, Franklin D. Roosevelt, William J. Clinton, George W. Bush and Barack Obama.
 
-The IBM Watson Personality Insights takes people's writing text as input and gives analysis about personality Big 5, Values, and Needs as the output. The analysis works well on text with more than 3,500 words. For each president, we combine all his Union of the State speech documents into one. Hence we have large enough corpus for each president to get very strong analysis results from the application.
+The IBM Watson Personality Insights takes people's writing text as input and gives analysis about personality Big 5, Values, and Needs as the output. The analysis works well on text with more than 3,500 words. For each president, we combine all his State of the Union speech documents into one. Hence we have large enough corpus for each president to get very strong analysis results from the application.
 
 We use most of the analysis results in our visualization. Let's first look at the definitions for the categories. We quote the official definition form IBM Watson here (http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/personality-insights/basics.shtml):
  
@@ -142,7 +208,7 @@ We summarize all test results in the following table. The color range from dark 
 
 <center> <img src="YF_Personality_table.png" height="400px" width="800px" /> </center>
 
-From the table we can see some obvious features. First of all, Agreeableness changes a lot over time. The 3 presidents before the 1940s tend to have very low Agreeableness comparing with the most recent ones. One of the reasons could be that the major issues the US is dealing with nowadays are very different from the early time. Presidents during war time tend to have low agreeableness. The other reason might be that the change of language usage over time affects the test results. It is possible that the Watson system's analysis is more based on modern languages and standards. Another obvious pattern is that the analyses of Franklin Roosevelt and George W. Bush show similar patterns. We would like to point out another interesting finding: all 6 presidents' reveal very similar Values. This means that the general values shown in the Union of the State speeches stay the same over time.
+From the table we can see some obvious features. First of all, Agreeableness changes a lot over time. The 3 presidents before the 1940s tend to have very low Agreeableness comparing with the most recent ones. One of the reasons could be that the major issues the US is dealing with nowadays are very different from the early time. Presidents during war time tend to have low agreeableness. The other reason might be that the change of language usage over time affects the test results. It is possible that the Watson system's analysis is more based on modern languages and standards. Another obvious pattern is that the analyses of Franklin Roosevelt and George W. Bush show similar patterns. We would like to point out another interesting finding: all 6 presidents reveal very similar Values. This means that the general values shown in the Union of the State speeches stay the same over time.
 
 After interpreting the table, we visualize the information for different presidents on the following 2 radar plots. We omit the Value information here, because all 6 president show almost identical patterns for the Value analysis. 
 
@@ -160,7 +226,7 @@ The first radar plot shows the Big 5 Personality percentiles. We can see that th
 
 From the above radar plot for Needs, we can clearly that the 6 presidents can be divided into 3 groups based on these standards. George Washington and Thomas Jefferson have similar patterns with very high consumer needs in challenge and comparatively low needs in the others. The distribution patterns for William J. Clinton and Barack Obama are almost identical: high love, practicality, harmony and very low need for challenge, ideal and self-expression. Franklin D. Roosevelt tend to have similar patterns and hive very high percentiles in almost all categories. One of the interpretation could be that the speech of presidents during peace time can be very different from those during the war time.
 
-With these plots and personality analyses, we are able to see what kind of values and personalities the presidents show through their Union of the State speeches. These may not be the same as their real personality, however, these are the interpretation of their personalities as presidents of the United States.
+With these plots and personality analyses, we are able to see what kind of values and personalities the presidents show through their State of the Union speeches. These may not be the same as their real personality, however, these are the interpretation of their personalities as presidents of the United States.
 
 ##V. Conclusion
 text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
