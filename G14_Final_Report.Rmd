@@ -369,7 +369,39 @@ From the above radar plot for Needs, we can clearly that the 6 presidents can be
 
 With these plots and personality analyses, we are able to see what kind of values and personalities the presidents show through their State of the Union speeches. These may not be the same as their real personality, however, these are the interpretation of their personalities as presidents of the United States.
 
-##V. Conclusion
+##V. K-Means Clustering   
+We use a K-Means cluster analysis to see which speeches are similar to each other and use Pricinple Component Analysis to reduce dimensions and provide a visual representation of the cluster space. It is easy to see the same early level clusters among party and era combined. Speeches made by the same president are always clustered together. Also, speeches from the same Political Party and Era are commonly next to each other (Obama & Clinton, Reagan & Bush Sr., Eisenhower & Truman).     
+```{r,echo=FALSE, warning=FALSE, message=FALSE}
+tf_idf_mat = t(speech_new)
+tf_idf_dist <- dist(tf_idf_mat)
+dist_mat <- as.matrix(tf_idf_dist)
+tf_idf_norm <- tf_idf_mat / apply(tf_idf_mat, MARGIN = 1, FUN = function(x) sum(x^2)^0.5)
+km_clust <- kmeans(x = tf_idf_norm, centers = 4, iter.max = 25)
+pca_comp <- prcomp(tf_idf_norm)
+pca_rep <- data_frame(sotu_name = paste(TOC$President, TOC$Year),
+                      pc1 = pca_comp$x[,1],
+                      pc2 = pca_comp$x[,2],
+                      clust_id = as.factor(km_clust$cluster))
+library(plotly)
+plot_ly(pca_rep, x = pc1, y = pc2, text = sotu_name, mode="markers", color = clust_id) %>% layout(title = 'K-Means Cluster: 4 President clusters on PCA Features')
+```
+
+##VI. Foreign Policy   
+When names of countries get mentioned during the speeches, it is usually that they demand national attention which reflect the foreign policy at that time. The instances of country names point to contemporaneous events. We can see the almost isolated reference of Vietnam in the 1960s (the Vietnam War), the bubbling of “Korea” in the 1950s (the Korean War), the rise and fall of soviet between 1945 and 1991, and the rise in “Iraq,” “Iran” and “Afghanistan” mentions in recent decades.       
+```{r,,echo=FALSE, warning=FALSE, message=FALSE}
+library(reshape2)
+library(RColorBrewer)
+countries = speech[c("iran","afghanistan", "iraq", "korea", "vietnam", "german", "japan","soviet", "russia"),]
+colnames(countries) = TOC$Year
+countries$id = rownames(countries)
+countries = melt(countries)
+colnames(countries) = c("country", "year", "count")
+# cols <- colorRampPalette(brewer.pal(7, "Set1"))
+# myPal <- cols(nlevels(TOC$President))
+plot_ly(countries, x = year, y = country, size = count, text = TOC$President, mode="markers") %>% layout(title = 'Foreign Policy among the time')
+```
+
+##VII. Conclusion
 text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
 
 ##Reference
