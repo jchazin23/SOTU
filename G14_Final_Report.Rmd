@@ -494,7 +494,8 @@ sotu.summary %>%
 We see that George Washington had a relatively limited vocabulary, while Roosevelt was the most well-versed one. Looking at recent presidents, we see that Obama ranks relatively high, while W. Bush lies on the middle of the table.
 
 ##VIII. Conclusion
-text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
+
+Thank you, God bless you. God bless the United States of America.
 
 ##Reference
 [1] Radar Plot: http://bl.ocks.org/nbremer/6506614
