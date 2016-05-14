@@ -16,12 +16,12 @@ Over two hundred years later, on January 13, 2016, President Barack Obama again 
 
 Yet one thing has remained unchanged: every year, the president delivers the State of the Union speech to Congress.
 
-In this project, you will experience the story that this corpus of two-hundred twenty-four speeches tells about the evolution of our nation. Among other topics, our text analysis provides insight to the personalities of some the greatest American leaders, visualizes how the foreign policy has evolved, and shows how the speech structures reflect a shifting American culture. 
+In this project, you will experience the story that this corpus of two-hundred twenty-four speeches tells about the evolution of our nation. Among other topics, our text analysis provides insight to the personalities of some the greatest American leaders, visualizes how the foreign policy has evolved, and shows how the speech structures reflect a shifting American culture.
 
 <center>
-<figure> 
-<img src='george-sotu-crop.png' width = '366' height = '206' style='padding-right: 20px; padding-top: 10px; padding-bottom: 10px;'/> 
-<img src='obama-sotu.jpg' width = '366' height = '206' style='padding-right: 10px; padding-top: 10px; padding-bottom: 10px;' /> 
+<figure>
+<img src='george-sotu-crop.png' width = '366' height = '206' style='padding-right: 20px; padding-top: 10px; padding-bottom: 10px;'/>
+<img src='obama-sotu.jpg' width = '366' height = '206' style='padding-right: 10px; padding-top: 10px; padding-bottom: 10px;' />
 </figure>
 </center>
 
@@ -52,7 +52,7 @@ full <- read.table('State of the Union Addresses 1970-2016.txt',
                    sep ='\n',
                    skipNul = FALSE)
 
-## This part takes awhile to load 
+## This part takes awhile to load
 docs <- c()
 for (i in c(1:dim(TOC)[1])){
   SOTU <- drop.levels(full[TOC$Speech_Start_Line[i]:TOC$Speech_End_Line[i],])
@@ -61,7 +61,7 @@ for (i in c(1:dim(TOC)[1])){
   SOTU = gsub("[[:punct:]]", "", SOTU)
   # lowercase
   Text = tolower(paste(SOTU[which(SOTU!="")], collapse=" "))
-  # stemming, whitespace 
+  # stemming, whitespace
   Word = wordStem(unlist(strsplit(Text, split=" ")), "english")
   docs <- cbind(docs, Word)
 }
@@ -76,7 +76,7 @@ for (i in nums) {
 count.war <- as.matrix(count.war)
 count.war <- t(count.war)
 count.war <- as.data.frame(count.war)
-war <- ggplot(count.war, aes(x = nums, y = count.war$V1)) + geom_bar(stat='identity') + ggtitle('Frequency of Word "War"') + xlab('') + ylab('Count') 
+war <- ggplot(count.war, aes(x = nums, y = count.war$V1)) + geom_bar(stat='identity') + ggtitle('Frequency of Word "War"') + xlab('') + ylab('Count')
 
 # Peace
 count.peace <- c()
@@ -87,10 +87,10 @@ for (i in nums) {
 count.peace <- as.matrix(count.peace)
 count.peace <- t(count.peace)
 count.peace <- as.data.frame(count.peace)
-peace <- ggplot(count.peace, aes(x = nums, y = count.peace$V1)) + geom_bar(stat='identity') + ggtitle('Frequency of Word "Peace"') + xlab('Sequential Order of Speeches') + ylab('Count') 
+peace <- ggplot(count.peace, aes(x = nums, y = count.peace$V1)) + geom_bar(stat='identity') + ggtitle('Frequency of Word "Peace"') + xlab('Sequential Order of Speeches') + ylab('Count')
 
 # Plots
-require(gridExtra) 
+require(gridExtra)
 grid.arrange(war, peace, nrow=2)
 ```
 
@@ -134,8 +134,8 @@ corp <- tm_map(corp, stripWhitespace)
 
 # Create Term Document Matrix
 tdm <- TermDocumentMatrix(corp,
-                          control = list(stemming = TRUE, stopwords = TRUE, 
-                                         minWordLength = 3, removeNumbers = TRUE, 
+                          control = list(stemming = TRUE, stopwords = TRUE,
+                                         minWordLength = 3, removeNumbers = TRUE,
                                          removePunctuation = TRUE))
 
 # Word Cloud
@@ -159,16 +159,16 @@ findAssocs(tdm, "peace", 0.39)
 
 ###Our Pronouns, Ourselves
 
-In this section, we continue the use of temporal analysis, turning from the broad subjects of **war** and **peace** to a more meta-analytical look at how Presidents refer to themselves, the country, and the citizens thereof. Before examining the data, we hypothesized that there might be an increase in instances of first-person singular prounoun ("I","me","my","mine") usage; as the role of the United States presidency became an increasingly powerful position, perhaps those who held the office would insert themselves more frequently into their States of the Union addresses. 
+In this section, we continue the use of temporal analysis, turning from the broad subjects of **war** and **peace** to a more meta-analytical look at how Presidents refer to themselves, the country, and the citizens thereof. Before examining the data, we hypothesized that there might be an increase in instances of first-person singular prounoun ("I","me","my","mine") usage; as the role of the United States presidency became an increasingly powerful position, perhaps those who held the office would insert themselves more frequently into their States of the Union addresses.
 
-Interestingly, the trend we see shows that while first-person singular prounoun usage has indeed increased in the past century, it has been greatly over-shadowed by the use of the first-person *plural* prounoun ("we","us","our","ours"). The trend is abundantly clear and persistent over the last 100 years. 
+Interestingly, the trend we see shows that while first-person singular prounoun usage has indeed increased in the past century, it has been greatly over-shadowed by the use of the first-person *plural* prounoun ("we","us","our","ours"). The trend is abundantly clear and persistent over the last 100 years.
 
-One might speculate that, with the advent of broadcast radio in the early 20th century (and later, television), the nature of the predsient's annual State of the Union address transformed from a mere "status report" to a unifiying, morale-boosting, identity-forging speech. 
+One might speculate that, with the advent of broadcast radio in the early 20th century (and later, television), the nature of the predsient's annual State of the Union address transformed from a mere "status report" to a unifiying, morale-boosting, identity-forging speech.
 
 Further interesting analysis along these lines might include noting differences in prounoun usage in election years vs. non-election years for 1st-term presidents.
 
 ```{r echo=FALSE, fig.width=9, fig.height=4, fig.align='center', warning=FALSE, message=FALSE}
- 
+
 # I/me/my/mine
 nums <- 1:224
 count.Me <- c()
@@ -182,7 +182,7 @@ for (i in nums) {
 count.Me <- as.matrix(count.Me)
 count.Me <- t(count.Me)
 count.Me <- as.data.frame(count.Me)
-Me <- ggplot(count.Me, aes(x = nums, y = count.Me$V1)) + geom_bar(stat='identity') + ggtitle('Frequency of "I/Me/My/Mine"') + xlab('') + ylab('Count') 
+Me <- ggplot(count.Me, aes(x = nums, y = count.Me$V1)) + geom_bar(stat='identity') + ggtitle('Frequency of "I/Me/My/Mine"') + xlab('') + ylab('Count')
 
 # You/your/yours/y'all
 count.You <- c()
@@ -196,7 +196,7 @@ for (i in nums) {
 count.You <- as.matrix(count.You)
 count.You <- t(count.You)
 count.You <- as.data.frame(count.You)
-You <- ggplot(count.You, aes(x = nums, y = count.You$V1)) + geom_bar(stat='identity') + ggtitle('Frequency of "You/Your/Yours/Y\'all"') + xlab('') + ylab('Count') 
+You <- ggplot(count.You, aes(x = nums, y = count.You$V1)) + geom_bar(stat='identity') + ggtitle('Frequency of "You/Your/Yours/Y\'all"') + xlab('') + ylab('Count')
 
 # We/us/our/ours
 count.We <- c()
@@ -255,16 +255,16 @@ for (i in nums) {
 count.Country <- as.matrix(count.Country)
 count.Country <- t(count.Country)
 count.Country <- as.data.frame(count.Country)
-Country <- ggplot(count.Country, aes(x = nums, y = count.Country$V1)) + geom_bar(stat='identity') + ggtitle('Frequency of "Country/Nation/Country\'s/Nation\'s\'"') + xlab('') + ylab('Count') 
+Country <- ggplot(count.Country, aes(x = nums, y = count.Country$V1)) + geom_bar(stat='identity') + ggtitle('Frequency of "Country/Nation/Country\'s/Nation\'s\'"') + xlab('') + ylab('Count')
 
 
 # Plots
-require(gridExtra) 
+require(gridExtra)
 
 grid.arrange(Me, We, nrow=2)
 ```
 
-Similar to the above two plots, here we examine the relative usage of the pronouns "you" and "they". While neither is wholly remarkable, what becomes very interesting to investigate are the anomalies in frequency. For example, on the "You" plot below, we see one State of the Union Address, number 175 (Lyndon B. Johnson, 1966), where the frequency of "you" explodes. 
+Similar to the above two plots, here we examine the relative usage of the pronouns "you" and "they". While neither is wholly remarkable, what becomes very interesting to investigate are the anomalies in frequency. For example, on the "You" plot below, we see one State of the Union Address, number 175 (Lyndon B. Johnson, 1966), where the frequency of "you" explodes.
 
 In this speech, Johnson employs the following structural style:
 
@@ -274,8 +274,8 @@ and
 
 > I recommend that you make it possible ...
 
-and 
- 
+and
+
 > I recommend that you meet the growing menace of crime ...
 
 This makes it seem conversational -- he is asking his listeners (the American people as well as the legislature) for help in accomplishing a list of goals. It also casts him in a very passive, almost non-threatening light. He is presenting himself as a public servant, and not as a domineering leader. Eventually, he summarizes his pleas with this eloquent paragraph:
@@ -290,7 +290,7 @@ This makes it seem conversational -- he is asking his listeners (the American pe
 grid.arrange(You, They, nrow=2)
 ```
 
-Here, we see the relative usage of the following groups of terms: ("country/nation") and ("America/American"). The most obvious observation is that, within the last 50 years, presidents have been using "America(n)" far more frequently. 
+Here, we see the relative usage of the following groups of terms: ("country/nation") and ("America/American"). The most obvious observation is that, within the last 50 years, presidents have been using "America(n)" far more frequently.
 
 ```{r echo=FALSE, fig.width=9, fig.height=4, fig.align='center', warning=FALSE, message=FALSE}
 grid.arrange(Country, America, nrow=2)
@@ -298,7 +298,7 @@ grid.arrange(Country, America, nrow=2)
 
 
 ##III. Topic Analysis
-In this part, we did topic analysis over the speeches of presidents using LDA. We first discovered the possible five topics among all speeches. Each speech will be assigned to a topic. The related words of each topic will aslo show in the legend of each plot. We then discovered the topics of speeches for both Republican and Democrat presidents. We expect some differences between the topics for different parties. 
+In this part, we did topic analysis over the speeches of presidents using LDA. We first discovered the possible five topics among all speeches. Each speech will be assigned to a topic. The related words of each topic will aslo show in the legend of each plot. We then discovered the topics of speeches for both Republican and Democrat presidents. We expect some differences between the topics for different parties.
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 library(tm)
@@ -328,7 +328,7 @@ Year = as.vector(docinfo$Year)
 #remove stopwords like "a"
 rownames(speech) = as.character(speech$Word)
 speech = speech[,-1]
-speech_new = speech[ !(rownames(speech) %in% stopwords('en')), ] 
+speech_new = speech[ !(rownames(speech) %in% stopwords('en')), ]
 #write(rownames(speech_new),"words.txt")
 
 #remove verbs
@@ -350,7 +350,7 @@ mtopic = topics(mlda,1)
 mtopics = data.frame(Year=Year,topic1=mtopic)
 ```
 ```{r echo=FALSE, fig.width=9, fig.height=4, fig.align='center', warning=FALSE}
-qplot(Year,..count..,data=mtopics,geom='density',fill=mterms[mtopic],position='stack', alpha=I(0.3)) + 
+qplot(Year,..count..,data=mtopics,geom='density',fill=mterms[mtopic],position='stack', alpha=I(0.3)) +
   ggtitle("Top 5 Topics Distribution") +
   scale_fill_discrete( "Topic Key Words") + ylab("% Frequency of Topic being in the Speech") +
   theme(legend.position="top", axis.title=element_text(size=10)) +
@@ -382,7 +382,7 @@ mtopics = data.frame(doc=1:101,topic1=mtopic)
 qplot(doc,..count..,data=mtopics,geom='density',fill=mterms[mtopic],position='stack',alpha=I(0.3)) +
   ggtitle("Democratic Presidents - Top 5 Topics") +
   scale_fill_discrete( "Topic Key Words") + ylab("% Frequency of Topic being in the Speech") +
-  theme(legend.position="top", axis.title=element_text(size=10)) + 
+  theme(legend.position="top", axis.title=element_text(size=10)) +
   guides(fill=guide_legend(title.theme = element_text(size=10, angle = 0), title.position = "top", nrow=2,byrow=TRUE))
 ```
 
@@ -401,7 +401,7 @@ mtopics = data.frame(doc=1:104,topic1=mtopic)
 qplot(doc,..count..,data=mtopics,geom='density',fill=mterms[mtopic],position='stack',alpha=I(0.3)) +
   ggtitle("Republican Presidents - Top 5 Topics") +
   scale_fill_discrete( "Topic Key Words") + ylab("% Frequency of Topic being in the Speech") +
-  theme(legend.position="top", axis.title=element_text(size=10)) + 
+  theme(legend.position="top", axis.title=element_text(size=10)) +
   guides(fill=guide_legend(title.theme = element_text(size=10, angle = 0), title.position = "top", nrow=2,byrow=TRUE))
 ```
 
@@ -416,7 +416,7 @@ In this part, we select 6 presidents and study their personalities based on the 
 The IBM Watson Personality Insights takes people's writing text as input and gives analysis about personality Big 5, Values, and Needs as the output. The analysis works well on text with more than 3,500 words. For each president, we combine all his State of the Union speech documents into one. Hence we have large enough corpus for each president to get very strong analysis results from the application.
 
 We use most of the analysis results in our visualization. Let's first look at the definitions for the categories. We quote the official definition form IBM Watson here (http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/personality-insights/basics.shtml):
- 
+
 * <b>Big Five </b> personality characteristics represent the most widely used model for generally describing how a person engages with the world. The model includes five primary characteristics, or dimensions:
      * Agreeableness is a person's tendency to be compassionate and cooperative toward others.
      * Conscientiousness is a person's tendency to act in an organized or thoughtful way.
@@ -424,7 +424,7 @@ We use most of the analysis results in our visualization. Let's first look at th
      * Emotional Range, also referred to as Neuroticism or Natural Reactions, is the extent to which a person's emotions are sensitive to the person's environment.
      * Openness is the extent to which a person is open to experiencing a variety of activities.
 * <b>Needs</b> describe which aspects of a product will resonate with a person.
-* <b>Values</b>  describe motivating factors that influence a person's decision making. 
+* <b>Values</b>  describe motivating factors that influence a person's decision making.
 
 We summarize all test results in the following table. The color range from dark read to dark green is corresponding to the 0% to 100% percentile.
 
@@ -432,7 +432,7 @@ We summarize all test results in the following table. The color range from dark 
 
 From the table we can see some obvious features. First of all, Agreeableness changes a lot over time. The 3 presidents before the 1940s tend to have very low Agreeableness comparing with the most recent ones. One of the reasons could be that the major issues the US is dealing with nowadays are very different from the early time. Presidents during war time tend to have low agreeableness. The other reason might be that the change of language usage over time affects the test results. It is possible that the Watson system's analysis is more based on modern languages and standards. Another obvious pattern is that the analyses of Franklin Roosevelt and George W. Bush show similar patterns. We would like to point out another interesting finding: all 6 presidents reveal very similar Values. This means that the general values shown in the Union of the State speeches stay the same over time.
 
-After interpreting the table, we visualize the information for different presidents on the following 2 radar plots. We omit the Value information here, because all 6 president show almost identical patterns for the Value analysis. 
+After interpreting the table, we visualize the information for different presidents on the following 2 radar plots. We omit the Value information here, because all 6 president show almost identical patterns for the Value analysis.
 
 The first radar plot shows the Big 5 Personality percentiles. We can see that the scores for Openness and Conscientiousness are similar for all 6 presidents. Agreeableness and Introversion/Extraversion have larger variation across the presidents. It is also very clear that the most recent presidents tend to show more Agreeableness, Emotional Range and Introversion in their Union of the State speech than the presidents before 1940s. There is a clear shift from the left side to the right side of the graph: from higher openness and conscientiousness towards higher agreeableness, emotional range, and introversion,
 
@@ -512,7 +512,7 @@ sotu.summary %>%
   filter(count > 4) %>%
   ggplot() + geom_bar(aes(x=reorder(President, Unique), y=Unique), stat = "identity") +
   ggtitle("Unique Words by President (>1 Term)") +
-  xlab("") + 
+  xlab("") +
   coord_flip() + theme_classic()
 ```
 
@@ -568,8 +568,17 @@ Finally we will look at the favorite words for some selected presidents, specifi
 
 
 ```
+Some interesting patterns are revealed here. For example, Kennedy tended to express himself with words associated to the social movements of the sixties, such as freedom, references to the world (as opposed to the nation), and the concept of peace. We also see that Washington is big on the words "United States", without many other concepts standing out, which makes sense when comparing to the results obtained by analyzing the extend of his vocabulary.
 
 ##VIII. Conclusion
+
+After completing this analysis we are able to gain a better understanding of the evolution of SOTU speeches, the characteristics of the presidents addressing them, and the main topics being covered. We see that, as one would expect, the most frequent terms on the speech are heavily correlated with the historical context on which they were given. Some interesting examples are the peak of war related terms throughout the period of WWII, the constant remarks made by George W. Bush on Saddam (Hussein), and the rise of concepts such as "peace", "free" and "world" during the sixties, when Kennedy was president.
+
+Other interesting findings relate to the content revealed via the LDA technique: the Democrats tend to deliver speeches related to the international state of affairs ("power", "war", "peace"), while republicans tend to focus more on the internal workings of the country ("security", "work", "taxes"). In terms of foreign policy, we are also able to see a reflection of the historical conflicts when analyzing the SOTU's, such as the predominance of references to the Soviet Union during the 70's and 80's, and the appearance of Iraq, Iran and Afghanistan on more recent years.
+
+Finally the analysis also revealed interesting traits of the presidents themselves. We now know that Theodore Roosevelt, for example, was the best versed one, if we measure this by the amplitude of his vocabulary, while George Washington had a much more limited one. In terms of values, all presidents tend to focus on "helping others" and achieving "harmony", while some of them exhibited unique traits. George Bush, for example, has been associated to feelings of "excitement" and "liberty", while Obama is among the presidents who exhibited a greater emotional range.
+
+Performing this analysis was useful as it gives us a better understanding of the context of the SOTU's, as well as the power of text analysis techniques. Many of the concepts developed here can be expanded further, be it via a more in-depth analysis of the same corpus or finding applications to them in a different one.
 
 Thank you, God bless you. God bless the United States of America.
 
